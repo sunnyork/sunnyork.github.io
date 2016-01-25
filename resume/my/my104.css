@@ -1,0 +1,1702 @@
+﻿@charset "utf-8";
+body{font-size:13px;font-family:Arial, Helvetica, sans-serif;margin:0;letter-spacing:1px;}
+form{margin:0;padding:0;}
+input,textarea{font-size:13px;font-family:Arial, Helvetica, sans-serif;}
+input:focus{color:#000;}
+ul,dl,ol{margin:0;}
+dt,dd,li{line-height:21px;vertical-align:baseline;}
+h1,h2,h3{font-family:Verdana;}
+h1{font-size:16px;font-weight:bold;margin-bottom:10px;}
+h1.line_yellow{font-size:16px;font-weight:bold;margin-bottom:20px;border-bottom:3px solid #ffb300;padding-bottom:10px;}
+h2{font-size:15px;font-weight:bold;margin-bottom:10px;}
+h2.line_yellow{font-size:15px;font-weight:bold;border-bottom:1px solid #ffb300;margin:0 0 20px 0;padding:7px 0 9px;background-color:#fff;}
+h2.line_yellow span{font-weight:normal;}
+h2.line_yellow a{font-weight:normal;letter-spacing:1px;font-size:13px;}
+h3{font-size:13px;font-weight:bold;margin-bottom:10px;}
+h3.line{border-bottom:1px solid #ccc;margin:9px 0 20px 0;padding-bottom:9px;}
+h3.line_yellow{font-size:13px;font-weight:bold;border-bottom:1px solid #ffb300;margin:9px 0 20px 0;padding-bottom:9px;letter-spacing:2px;background-color:#fff;}
+h3.line_yellow a{font-weight:normal;letter-spacing:1px;}
+/*有點的列表*/
+.list{margin:10px 0;display:block;}
+.list li{padding-left:15px;line-height:18px;list-style:none;background:url(../img/ill_li_drop.gif) no-repeat left 3px;margin-bottom:5px;}
+.list li p.info{ margin:5px 0 20px 0;}
+span{font-size:13px;font-weight:normal;}
+img{border:none;vertical-align:baseline;}
+a{color:#0055aa;text-decoration:none;outline:none;}
+a:hover{color:#0099CC;text-decoration:none;}
+a.link{text-decoration:underline;}/*連結有底線*/
+hr{border:0;border-bottom:1px solid #ccc;margin:20px 0;}
+hr.noline{margin:15px 0;border:none;}
+.t_l{text-align:left;}
+.t_c{text-align:center;}
+.t_r{text-align:right;}
+.numeral{color:#cc3300;margin-left:3px;margin-right:3px;font-family:Verdana;}
+.numeral_11{font-size:11px;font-weight:bold;-webkit-text-size-adjust:none;letter-spacing:0;font-family:Verdana;padding-left:3px;padding-right:3px;}
+.numeral_12{font-size:12px;font-weight:bold;-webkit-text-size-adjust:none;font-family:Verdana;}
+.txt{font-weight:normal;}
+.txt_11{font-weight:normal;font-size:11px;}
+.txt_12{font-weight:normal;font-size:12px;}
+.txt_13{font-weight:normal;font-size:13px;}
+.txt_15_1{font-weight:normal;font-size:15px;}
+.txt_16{font-size:16px;}
+.txt_16_b{font-size:16px;font-weight:bold;}
+.txt_15{font-size:15px;font-weight:bold;}
+.txt_21{font-size:21px;font-weight:bold;}
+.txt_b{font-weight:bold;}
+.txt_sub{color:#666;}
+.txt_gray{color:#999;}
+.txt_yellow{color:#ffb300;}
+.txt_red{color:#c30;}
+.txt_blue{color:#00F;}
+.txt_green{color:#396;}
+.error{color:#c30;font-size:12px;}
+.float_L{float:left;}
+.float_R{float:right;}
+.float_L_img{margin-right:10px;float:left;}
+.float_R_img{margin-left:10px;float:right;}
+.display_inline{display:inline;}
+.w20{width:20px;}
+.w30{width:30px;}
+.w40{width:40px;}
+.w50{width:50px;}
+.w80{width:80px;}
+.w83{width:83px;}
+.w100{width:100px;}
+.w102{width:102px;}
+.w119{width:119px;}
+.w120{width:120px;}
+.w130{width:130px;}
+.w140{width:140px;}
+.w150{width:150px;}
+.w170{width:170px;}
+.w200{width:200px;}
+.w229{width:229px;}
+.w250{width:250px;}
+.w285{width:285px;}
+.w300{width:300px;}
+.w333{width:333px;}
+.w360{width:360px;}
+.w385{width:385px;}
+.w390{width:390px;}
+.w492{width:492px;}
+.w500{width:500px;}
+.w510{width:510px;}
+.w520{width:520px;}
+.w550{width:550px;}
+.w600{width:600px;}
+.w632{width:632px;}
+.w645{width:645px;}
+.w950{width:950px;}
+.h50{height:50px;}
+.magic_anchor{position:relative;top:-30px;}
+.line_bottom{border-bottom:1px solid #ebebeb;margin-bottom:10px;}
+.line{border-bottom:1px solid #ccc;padding-bottom:10px;}
+.arrow{font-size:11px;-webkit-text-size-adjust:none;}/*▼*/
+.arrow a{text-decoration:none;display:inline-block;}
+/* checkbox & radio button 的 pointor */
+.pointer{cursor:pointer;}
+.close{float:right;margin-right:4px;margin-top:4px;}/*關閉視窗 icon*/
+.close_s{float:right;margin-right:4px;}/*關閉視窗 icon*/
+/*icon*/
+.icon_edit,.icon_add,.icon_add_none,.icon_delete,.icon_delete_s,
+.icon_storage,.icon_storage_none,
+.icon_annotate,.icon_annotate_none,
+.icon_mail_receive,.icon_view_resume,
+.icon_survey,.icon_help,.icon_folder,.icon_attention,
+.icon_boxup,.icon_boxdown,.icon_map,
+.icon_close_b,.icon_wage,
+.icon_prioritize_top,.icon_prioritize_down,
+.icon_synchronizing,.icon_loader,
+.icon_interest,.icon_none,
+.icon_tool_article,.icon_tool_safe,.icon_tool_certify,.icon_arrow_red,.icon_none,.icon_switch,.icon_switch_none,
+.icon_list_time,.icon_list_mix,.icon_list_related,.icon_remove_fav,
+/*<!-- 2014.04 BC溝通 Icon */
+.icon_download,.icon_print,.icon_print_ibon,.icon_fb,.icon_mail_accessory,.icon_mail_unread,.icon_mail_read,
+.icon_mail_reply,.icon_reply,.icon_bctalk,.icon_replymail{height:16px;width:16px;display:inline-block;margin-right:3px;vertical-align:text-bottom;}
+.icon_switch{background:url(../img/icon_switch.gif) no-repeat;}/*履歷開放設定*/
+.icon_switch_none{background:url(../img/icon_switch.gif) no-repeat 0 -30px;}/*履歷尚未完成*/
+.icon_edit{background:url(../img/icon_tool.gif) no-repeat 0 0;}/*編輯*/
+.icon_add{background:url(../img/icon_tool.gif) no-repeat 0 -30px;margin-left:0;}/*新增*/
+.icon_delete{background:url(../img/icon_tool.gif) no-repeat 0 -60px;}/*刪除*/
+.icon_delete_s{background:url(../img/icon_delete.gif) no-repeat;cursor:pointer;}/*小刪除*/
+.icon_add_none{background:url(../img/icon_tool.gif) no-repeat 0 -90px;margin-left:0;}/*不能新增*/
+.icon_prioritize_top{background:url(../img/icon_prioritize_top.gif) no-repeat 0 0;}/*排序往上*/
+.icon_prioritize_down{background:url(../img/icon_prioritize_down.gif) no-repeat 0 0;}/*排序往下*/
+.icon_storage{background:url(../img/icon_storage.gif) no-repeat 0 0;}/*已儲存*/
+.icon_storage_none{background:url(../img/icon_storage.gif) no-repeat 0 -30px;}/*未儲存*/
+.icon_annotate{background:url(../img/icon_annotate.gif) no-repeat;}/*註記*/
+.icon_mail_receive{background:url(../img/icon_mail_receive.gif) no-repeat;}/*已回覆過*/
+.icon_view_resume{background:url(../img/icon_view_resume.gif) no-repeat;}/*檢視履歷*/
+.icon_survey{background:url(../img/icon_survey.gif) no-repeat;}/*另開*/
+.icon_help{background:url(../img/icon_help.gif) no-repeat;}/*說明*/
+.icon_folder{background:url(../img/icon_folder.gif) no-repeat;}/*黃資料夾*/
+.icon_attention{background:url(../img/ill_attention.gif) no-repeat;}/*提醒*/
+.icon_boxup{background:url(../img/icon_minus.gif) no-repeat;}/*收合*/
+.icon_boxdown{background:url(../img/icon_plus.gif) no-repeat;}/*展開*/
+.icon_wage{background:url(../img/icon_wage.gif) no-repeat;}/*市場身價*/
+.icon_tool_article{background:url(../img/icon_tool_article.gif) no-repeat;}/*求職錦囊*/
+.icon_tool_safe{background:url(../img/icon_tool_safe.gif) no-repeat;}/*求職安全*/
+.icon_tool_certify{background:url(../img/icon_tool_certify.gif) no-repeat;}/*證照中心*/
+.icon_arrow_red{background:url(../img/ill_arrow_list.gif) no-repeat;}
+.icon_interest{background:url(../img/icon_interest.gif) no-repeat;}/*我有興趣*/
+.icon_map{background:url(../img/icon_map.gif) no-repeat;}/*地圖*/
+.icon_close_b{background:url(../img/icon_close_b.gif) no-repeat;margin-top:4px;}/*關閉*/
+.icon_synchronizing{background:url(../img/ill_synchronizing.gif) no-repeat;}/*同步*/
+.icon_loader{background:url(../img/ill_loader.gif) no-repeat;}/*小花轉*/
+.icon_loader_b{background:url(../img/ill_loader_24.gif) no-repeat;height:24px;width:24px;display:inline-block;margin-right:10px;vertical-align:text-bottom;}/*大花轉*/
+.icon_list_time{background:url(../img/icon_list_time.gif) no-repeat;}/*日期排序*/
+.icon_list_mix{background:url(../img/icon_list_mix.gif) no-repeat;}/*預設排序*/
+.icon_list_related{background:url(../img/icon_list_related.gif) no-repeat;}/*相關性排序*/
+.icon_download{background:url(../img/icon_download.gif) no-repeat;}/*下載*/
+.icon_print{background:url(../img/icon_print.gif) no-repeat;}/*列印*/
+.icon_print_ibon{background:url(../img/icon_print_ibon.gif) no-repeat;}/*ibon下載*/
+.icon_new{background:url(../img/ill_new.gif) no-repeat;width:33px;height:15px;display:inline-block;margin:-5px 0 0 0;}
+.icon_fb{ background:url(../img/icon_fb.gif) no-repeat;} /*FB分享*/
+/*<!-- 2014.04 BC溝通 Icon */
+.icon_mail_accessory{ background:url(../img/ill_mail_pic.gif) no-repeat 0 -2px;}/*信件未讀*/
+.icon_mail_unread{ background:url(../img/ill_mail_pic.gif) no-repeat 0 -20px;}/*信件未讀*/
+.icon_mail_read{ background:url(../img/ill_mail_pic.gif) no-repeat 0 -40px;}/*信件已讀*/
+.icon_mail_reply{ background:url(../img/ill_mail_pic.gif) no-repeat 0 -61px;}/*信件回覆*/
+.icon_replymail{ background:url(../img/icon_replymail.gif) no-repeat 0 0;}/*求職者回覆*/
+.icon_reply{background: url(../img/icon_reply.gif) no-repeat 0 0; margin-right:6px;}/*聯絡廠商*/
+.icon_bctalk{background: url(../img/icon_bctalk.gif) no-repeat 0 0; margin-right:6px;}/*檢視BC訊息*/
+li.tool span.icon_survey{margin-left:5px;}
+.box_loader{border:1px solid #ccc;padding:1px 4px;background-color:#f5f5f5;display:inline-block;}
+/*箭頭*/
+.arrow_top_big{background:url(../img/ill_cite_big.gif) no-repeat bottom;}
+.arrow_top{background:url(../img/ill_popupbox_top.gif) no-repeat bottom;}
+.arrow_bottom{background:url(../img/ill_dn.gif) no-repeat top;}
+/*包最外圍的div*/
+#wrapper{width:950px;margin:auto;padding:1px 4px;clear:both;}
+
+/*節慶logo 
+#header{margin:0px;height:95px;background:url(../img/ill_logo_holiday.gif) no-repeat ;} 
+.logo{display:inline-block;cursor:pointer;width:256px;height:32px; margin-top:34px;}
+*/
+/*104logo */
+#header{margin:0;height:95px;}
+.logo{background:url(../img/ill_my104logo.gif) no-repeat;height:32px;margin-top:35px;width:256px;display:inline-block;cursor:pointer;}
+
+/*nav bar*/
+#nav{width:950px;clear:both;}
+#nav_menu{width:602px;height:46px;}
+#nav_menu li.home, #nav_menu li.resume, #nav_menu li.job, #nav_menu li.tool, #nav_menu li.account{width:120px;line-height:46px;display:block;float:left;}
+#nav_menu li.home a.home, #nav_menu li.resume a.resume, #nav_menu li.job a.job, #nav_menu li.tool a.tool, #nav_menu li.account a.account{text-indent: 100%; white-space: nowrap;overflow: hidden;display:block;width:120px;}
+#nav_menu li.home a.home, #nav_menu li.account a.account{width:121px}
+#nav_menu li.home, #nav_menu li.account{width:121px;}
+/*subnav*/
+#nav_menu .clearfix{}
+#nav_menu ul#navlist{float:left;}
+#nav_menu ul#navlist .submenu{
+	background:#FFF;
+	position:absolute;
+	z-index:100;
+	display:none;
+	border-right:1px solid #404040;
+	border-bottom:1px solid #404040;
+	border-left:1px solid #404040;
+	box-shadow:3px 3px 6px #aaa ,-3px 3px 6px #aaa;
+	-moz-box-shadow:3px 3px 6px #aaa ,-3px 3px 6px #aaa;
+	-webkit-box-shadow:3px 3px 6px #aaa ,-3px 3px 6px #aaa;
+}
+#nav_menu ul#navlist .submenu-grid{z-index:100;top:-3px;}
+#nav_menu .submenu-content{border:1px solid #FFF;background:white;}
+#nav_menu .submenu-col{float:left;padding:0 10px;margin:10px 0 10px 5px;border-right:1px solid #C9C9C9;height:auto;}
+#nav_menu .bd_r_0{border-right:0;}
+#nav_menu .submenu-col li{float:none;padding:0 0 0 5px;height:;}
+#nav_menu .submenu-col li:hover{background-color:#efefef;}
+#nav_menu .submenu-col h3{line-height:16px;font-weight:normal;padding:0 0 0 5px;}
+/*首頁*/
+#nav_menu li.home{background:url(../img/ill_nav_menu_home.gif) no-repeat 0 0;}
+#nav_menu li.home .on{background:url(../img/ill_nav_menu_home.gif) no-repeat 0 -50px;}
+#nav_menu li.homeactive{background:url(../img/ill_nav_menu_home.gif) no-repeat 0 -100px;}
+/*履歷*/
+#nav_menu li.resume{background:url(../img/ill_nav_menu.gif) no-repeat 0 0;}
+#nav_menu li.resume .on{background:url(../img/ill_nav_menu.gif) no-repeat 0 -50px;z-index:101}
+#nav_menu li.resumeactive{background:url(../img/ill_nav_menu.gif) no-repeat 0 -100px;}
+/*工作*/
+#nav_menu li.job{background:url(../img/ill_nav_menu.gif) no-repeat -120px 0;}
+#nav_menu li.job .on{background:url(../img/ill_nav_menu.gif) no-repeat -120px -50px;}
+#nav_menu li.jobactive{background:url(../img/ill_nav_menu.gif) no-repeat -120px -100px;}
+/*工具*/
+#nav_menu li.tool{background:url(../img/ill_nav_menu.gif) no-repeat -240px 0;}
+#nav_menu li.tool .on{background:url(../img/ill_nav_menu.gif) no-repeat -240px -50px;}
+#nav_menu li.toolactive{background:url(../img/ill_nav_menu.gif) no-repeat -240px -100px;}
+/*設定*/
+#nav_menu li.account{background:url(../img/ill_nav_menu.gif) no-repeat -360px 0;}
+#nav_menu li.account .on{background:url(../img/ill_nav_menu.gif) no-repeat -360px -50px;}
+#nav_menu li.accountactive{background:url(../img/ill_nav_menu.gif) no-repeat -360px -100px;}
+/*搜尋*/
+#nav_search{float:right;background:url(../img/bg_nav_search.gif) no-repeat;height:46px;width:348px;}
+.nav_search_form{margin-top:10px;}
+.nav_search_form input[type="text"]{height:25px;line-height:25px;}
+.menu_search{width:230px;float:left;}
+.nav_search_form .btn_search{
+	height:26px;
+	width:27px;
+	margin-left:-3px;
+	background:url(../img/but_menu_search.gif) no-repeat left;
+	border-style:none;
+}
+/*nav 履歷表名稱*/
+#nav_menu .submenu-col .nav_sub .nav_rname{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	white-space:nowrap;
+}
+/*nav promo 用 a class="promo" */
+#nav_menu .submenu-col .nav_sub a span.link{background:url(../img/icon_survey.gif) no-repeat;height:16px;width:16px;display:inline-block;vertical-align:middle;}
+/*首頁找工作/找公司*/
+.home_search{width:60px;}
+/*偽下拉*/
+.search_menu{
+	cursor:pointer;
+	float:left;
+	overflow:hidden;
+	margin-left:7px;margin-right:5px;
+	padding-right:10px;
+	height:26px;
+	line-height:26px;
+	color:#000;
+	text-indent:6px;
+	background:url(../img/ill_arrow_search.gif) no-repeat right;
+	font-weight:bold;
+}
+.search_menu:hover, .search_menu_on{
+	border:1px solid #999;
+	background-color:#fff;
+	margin-left:6px;
+	margin-right:4px;
+	height:25px;
+	line-height:25px;
+}
+.sortlist_menu{
+	position:absolute;
+	background:#fff;
+	border:1px solid #999;border-top:none;
+	z-index:999;
+	margin-top:-1px;
+}
+.sortlist_menu p a{display:block;padding:6px;color:#333;font-weight:bold;}
+.sortlist_menu p a:hover{background-color:#efefef;}
+#home_job_com{width:70px;margin-left:6px;margin-top:25px;display:none;}
+/*公告*/
+.bulletin{margin:30px auto;clear:both;}
+.bulletin li{display:inline;}
+/*麵包屑*/
+.path{margin:20px auto;clear:both;font-size:12px;}
+/*my104會員中心首頁內容區*/
+.content_a,.content_b{display:block;float:left;}
+.content_a{width:380px;margin-right:60px;}
+.content_b{width:510px;}
+/*my104會員中心首頁標題*/
+.content_resume h1,.content_job h1,.content_tool h1,.content_recommend h1,.content_service h1{height:50px;margin-bottom:15px;line-height:60px;text-align:right;border-bottom:1px dotted #ccc;}
+.content_resume,.content_job,.content_tool,.content_recommend,.content_service{clear:both;}
+.content_resume    h1{background:url(../img/ill_content_h1.gif) no-repeat 0 0;}/*基本資料與履歷*/
+.content_job       h1{background:url(../img/ill_content_h1.gif) no-repeat 0 -50px;}/*工作*/
+.content_tool      h1{background:url(../img/ill_content_h1.gif) no-repeat 0 -100px;}/*工具*/
+.content_service   h1{background:url(../img/ill_content_h1.gif) no-repeat 0 -150px;}/*多元服務*/
+/*首頁_履歷_姓名與多筆履歷設定*/
+.basic_info{margin-left:100px;}
+.basic_info h2 a{margin-left:10px;}
+.basic_info h2{font-size:16px;font-weight:bold;margin-bottom:8px;}
+.basic_info li{padding-left:15px;background:url(../img/ill_li_drop.gif) no-repeat left 7px;line-height:25px;}
+.basic_info li .text_overflow{display:inline-block;max-width:15.2em;vertical-align:middle;}
+.basic_info li .txt_12{font-size:12px;vertical-align:middle;}
+.email_spacing{letter-spacing:3px;}
+.content_resume,.content_job{margin-bottom:20px;min-height:315px;height:auto;*height:315px;overflow:visible;}
+.content_tool,.content_service{margin-bottom:50px;}
+#recommend-tip {
+	position: absolute;
+	right: 0;
+	top: -60px;}
+#recommend-tip .close {
+	display: block;
+	background: url(../img/ill_smart_man.png) 0 0 no-repeat;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	right: 3px;
+	top: 48px;}
+/*首頁_工作求職紀錄*/
+.notes_info{width:180px;display:inline-block;}
+.notes_info h3{margin-bottom:5px;}
+.notes_info dl{clear:both;}
+.notes_info dt{display:inline-block;width:120px;}
+.notes_info dd{display:inline-block;font-weight:bold;width:60px;font-family:Verdana;line-height:26px;text-align:right;}
+.notes_info dd a{padding-left:10px;padding-right:10px;}
+/*首頁_工作配對工作*/
+.mate_info{display:inline-block;width:280px;margin-left:30px;vertical-align:top;}
+.mate_info h3{margin-bottom:5px;}
+.mate_info dl{clear:both;}
+.mate_info dt,.mate_info dd{display:inline-block;vertical-align:middle;line-height:26px;}
+.mate_info dt{width:195px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.mate_info dd{width:80px;font-weight:bold;font-family:Verdana;text-align:right;}
+.mate_info dd a{padding-left:10px;padding-right:10px;}
+/*首頁_工具*/
+div.content_tool{display:block\9;}
+.content_tool ul{background:url(../img/bg_content_tool.gif) no-repeat;padding-top:120px;}
+.content_tool ul li{width:125px;float:left;}
+.content_tool ul li ul{background:none;display:inline-block;padding-top:0;margin-bottom:30px;}
+.content_tool ul li:not(:first-child) ul{padding-left:27px;}
+.content_tool ul li ul li{display:block;vertical-align:top;}
+/*首頁_推薦*/
+/*首頁_多元服務*/
+.content_service dl{clear:both;padding:5px 0;margin-top:-5px;}
+.content_service dl:hover{background-color:#f0f0f0;cursor:pointer;}
+.content_service dt{float:left;display:block;width:75px;clear:left;margin-bottom:1px;font-weight:bold;}
+.content_service dd{display:inline-block;width:430px;}
+.content_service dd ul{margin-top:0;margin-bottom:0;clear:both;}
+.content_service dd li{float:left;margin-right:10px;}
+/*H1*/
+.box_h1 h1{height:45px;line-height:38px;padding-left:50px;margin-bottom:12px;font-size:21px;font-weight:bold;vertical-align:top;}
+.box_h1 h1.resume{background:url(../img/ill_h1.gif) no-repeat 0 0;}/*履歷*/
+.box_h1 h1.job {background:url(../img/ill_h1.gif) no-repeat 0 -50px;}/*工作*/
+.box_h1 h1.tool {background:url(../img/ill_h1.gif) no-repeat 0 -100px;}/*工具*/
+.box_h1 h1.account {background:url(../img/ill_h1.gif) no-repeat 0 -150px;}/*設定*/
+.box_h1 span.subtitle,.box_h1 span.subtitle_txt{font-size:21px;margin-left:10px;background-color:#fff;padding-right:10px;vertical-align:top;}
+.box_h1 span.subtitle_txt{
+	display:inline-block;
+	max-width:550px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.box_h1 span.info{float:right;height:45px;line-height:28px;font-size:13px;font-weight:normal;background-color:#fff;padding-left:10px;}
+.box_h1 span.button{float:right;margin-top:5px;}
+/*內容頁外框*/
+.content{clear:both;}
+.content p{line-height:21px;margin:10px auto;}
+/*內頁左右內容區*/
+.content_info,.content_list,.content_menu{display:block;float:left;}
+.content_info,.content_menu{width:175px;margin-right:20px;background:url(../img/bg_content_info.gif) no-repeat right bottom;height:800px;}
+.content_list{width:755px;margin-bottom:20px;}
+/*內頁右內容區*/
+.content_list p{line-height:21px;margin:0 0 5px 0;}
+.content_list p.info{margin:10px auto 10px auto;}
+/*內頁左內容區*/
+.content_info ul{margin-bottom:20px;}
+.content_info li{background:url(../img/ill_my_info.gif) no-repeat right 0;height:33px;line-height:33px;overflow:hidden;text-indent:8px;font-size:15px;text-overflow:ellipsis;-o-text-overflow:ellipsis;white-space:nowrap;}
+.content_info li a{display:block;}
+.content_info li a:hover{background-color:#f4f4f4;border-right:1px solid #ccc;}
+.content_info li.on{background:url(../img/ill_my_info.gif) no-repeat right -50px;height:33px;line-height:33px;display:block;font-size:15px;}
+.content_info li.on a{color:#000000;}
+.content_info li.on a:hover{background:url(../img/ill_my_info.gif) no-repeat right -50px;border-right:none;}
+.content_info p.button{padding-left:15px;}
+.content_info li a.all_folder_on{background:url(../img/icon_folder.gif) no-repeat 8px 8px;color:#000000;padding-left:20px;width:155px;}
+.content_info li a.all_folder_none{background:url(../img/icon_folder.gif) no-repeat 8px -22px;padding-left:20px;width:155px;}
+.content_info li a.all_folder_none:hover{background:url(../img/icon_folder.gif) no-repeat 8px -52px;padding-left:20px;width:155px;}
+.content_info li a.folder_on,.content_info li a.all_folder_on:hover{background:url(../img/icon_folder.gif) no-repeat 18px 8px;color:#000000;padding-left:30px;width:145px;}/*所在資料夾*/
+.content_info li a.folder_none{background:url(../img/icon_folder.gif) no-repeat 18px -22px;padding-left:30px;width:145px;}/*資料夾*/
+.content_info li a.folder_none:hover{background:url(../img/icon_folder.gif) no-repeat 18px -52px;padding-left:30px;width:145px;}/*資料夾*/
+.content_info li .other{padding-left:13px;width:162px;font-size:15px;}
+.content_info li a.other{padding-left:13px;width:162px;}/*進階設定*/
+/*內頁左內容區_修改履歷*/
+.resume_nav{display:block;float:left;width:175px;margin-right:20px;background:url(../img/bg_content_info.gif) no-repeat right bottom;height:800px;}
+.resume_nav ul{ margin-bottom:20px;}
+.resume_nav li{ background:url(../img/ill_resume_nav_none.jpg) no-repeat;height:50px;line-height:50px; overflow:hidden;text-indent:8px;font-size:15px;}
+.resume_nav li a{ display:block;height:49px;}
+.resume_nav li a:hover{ background-color:#f4f4f4;border-right:1px solid #ccc;border-bottom:1px solid #ccc;height:49px;}
+.resume_nav li.on{background:url(../img/ill_resume_nav_on.gif) no-repeat right 0;height:67px;line-height:15px;padding-top:25px;display:block;font-size:15px;}
+.resume_nav li.on a{ color:#000;}
+.resume_nav li.on a:hover{background:url(../img/ill_resume_nav_on.gif) no-repeat right 0;border-right:none;}
+.resume_nav p.button{padding-left:15px;}
+.resume_nav li a.all_folder_on,.resume_nav li a.all_folder_on:hover{background:url(../img/icon_folder.gif) no-repeat 8px 8px;color:#000;padding-left:20px;width:155px;}
+.resume_nav li a.all_folder_none{background:url(../img/icon_folder.gif) no-repeat 8px -22px;padding-left:20px;width:155px;}
+.resume_nav li a.all_folder_none:hover{background:url(../img/icon_folder.gif) no-repeat 8px -52px;padding-left:20px;width:155px;}
+.resume_nav li a.folder_on,.resume_nav li a.folder_on:hover{background:url(../img/icon_folder.gif) no-repeat 18px 8px;color:#000;padding-left:30px;width:145px;}/*所在資料夾*/
+.resume_nav li a.folder_none{background:url(../img/icon_folder.gif) no-repeat 18px -22px;padding-left:30px;width:145px;}/*資料夾*/
+.resume_nav li a.folder_none:hover{background:url(../img/icon_folder.gif) no-repeat 18px -52px;padding-left:30px;width:145px;}/*資料夾*/
+.resume_nav li a.other{padding-left:13px;}/*進階設定*/
+/*<!-- 2014.04 BC溝通 -->內頁左內容區_大選單*/
+.content_menu ul{ margin-bottom:20px;}
+.content_menu li{ background:url(../img/ill_resume_nav.gif) no-repeat right 0 ; height:50px; line-height:50px;  overflow:hidden;text-indent:8px;font-size:15px;}
+.content_menu li a{ display:block;}
+.content_menu li a:hover{ background-color:#f4f4f4; border-right:1px solid #ccc; border-bottom:1px solid #ccc; height:49px;}
+.content_menu li.on{background:url(../img/ill_resume_nav.gif) no-repeat right -55px ;height:54px; line-height:54px; display:block;font-size:15px;}
+.content_menu li.on a{ color:#000000;}
+.content_menu li.on a:hover{background:url(../img/ill_resume_nav.gif) no-repeat right -55px ;border-right:none;}
+/* 未填寫 icon */
+.non-input{display:inline-block;background-image:url(../img/ill_resume_nav_no.gif);width:81px;height:21px;}
+/* 學歷未填 */
+.no_degree{ margin:0 0 10px 120px;}
+/*工具_首頁*/
+.tool_index_list{width:220px;float:right;}
+.tool_index_content{width:700px;display:block;float:left;margin-right:30px;margin-bottom:20px;}
+/*工具選單*/
+.tool_index_menu{width:700px;display:block;margin-bottom:20px;height:100px;}
+.tool_index_menu ul li ul.m1{padding-left:80px;}
+.tool_index_menu ul li ul.m2{padding-left:135px;}
+.tool_index_menu ul li ul.m3{padding-left:175px;}
+.tool_index_menu ul{background:url(../img/bg_tool_index.gif) no-repeat top;margin-top:35px;}
+.tool_index_menu ul li{width:200px;display:inline-block;padding:0;vertical-align:top;}
+.tool_index_menu ul li ul{background:none;display:inline-block;padding:0;}
+.tool_index_menu ul li ul li{display:block;}
+.tool_index_menu ul li ul li a{padding-left:15px;}
+.tool_index_menu ul li ul li a.active{background:url(../img/ill_arrow.gif) no-repeat 2px;color:#000000;}
+.tool_index_box{
+	height:200px;border:1px solid #ccc;display:block;vertical-align:top;
+	padding:0 25px;
+	-webkit-box-shadow:0 6px 6px -6px #999;
+	-moz-box-shadow:0 6px 6px -6px #999;
+	box-shadow:0 1px 8px 0 #999;
+}
+.tool_index_box .arrow_top_big{height:16px;display:block;position:relative;z-index:5;top:-16px;left:0;}
+.tool_index_box h2{margin:0;padding:0;}
+/*工具_首頁_切換內容*/
+.tool_box_a .arrow_top_big{left:-305px;}
+.tool_box_b .arrow_top_big{left:-60px;}
+.tool_box_c .arrow_top_big{left:190px;}
+.tool_scope{display:inline-block;width:100%;}
+/*工具首頁_104職業適性量表*/
+.free_report{float:left;margin-right:30px;margin-top:10px;}
+.free_report p{text-align:center;margin:0;margin-top:5px;}
+.free_report img{width:100px;height:100px;padding:10px;border:1px solid #ccc;}
+.free_list p{margin:10px 0 0 0;}
+.free_list dl{display:inline-block;width:230px;height:110px;vertical-align:top;margin-top:10px;}
+.free_list dl.c{margin-left:30px}
+.free_list dt{border-bottom:1px solid #999;font-weight:bold;padding-bottom:9px;margin-bottom:10px;}
+.free_list dd{line-height:18px;list-style:none;background:url(../img/ill_li_drop.gif) no-repeat left 3px;margin-bottom:3px;padding-left:15px;}
+/*工具首頁_職涯興趣量表*/
+.intresting_report{float:left;width:320px;height:130px;padding-right:20px;margin-right:30px;vertical-align:top;border-right:1px solid #ccc;}
+.intresting_report p,.intresting_list p{margin:10px 0 0 0;}
+.intresting_list ul{display:inline-block;margin-top:5px}
+.intresting_list li{line-height:18px;list-style:none;background:url(../img/ill_li_drop.gif) no-repeat left 3px;margin-bottom:3px;padding-left:15px;}
+/*工具首頁_工作價值觀量表*/
+.values_report{float:left;width:320px;height:130px;padding-right:20px;margin-right:30px;vertical-align:top;border-right:1px solid #ccc;}
+.values_report p,.values_list p{margin:10px 0 0 0;}
+.values_list ul{display:inline-block;margin-top:5px}
+.values_list li{line-height:18px;list-style:none;background:url(../img/ill_li_drop.gif) no-repeat left 3px;margin-bottom:3px;padding-left:15px;}
+.values_report{padding-top:10px;}
+.values_report ul{display:inline-block;width:320px;vertical-align:top;}/*工具首頁_工作價值觀量表_測驗結果*/
+/*工具首頁_學長姐幫我找*/
+.department_report{padding-top:10px;}
+.department_report dl{display:inline-block;width:192px;height:110px;vertical-align:top;}/*工具首頁_學長姐幫我找_測驗結果*/
+.department_report dl.c{margin-left:30px;margin-right:30px;}
+.department_report dt{border-bottom:1px solid #999;font-weight:bold;padding-bottom:9px;margin-bottom:10px;}
+.department_report dd{line-height:18px;list-style:none;background:url(../img/ill_li_drop.gif) no-repeat left 3px;margin-bottom:3px;padding-left:15px;}
+/*工具首頁_證照名稱*/
+.certify_name{display:inline-block;width:260px;color:#339966;margin-left:3px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	white-space:nowrap;
+}
+/*工具首頁_用學歷找、用工作經驗找、用證照找列表*/
+.tool_index_box_list{clear:both;margin:0;padding:0;margin-top:10px;}
+.tool_index_box_list ul{margin:0;padding:1px 0 3px 0;border-top:1px solid #ebebeb;}
+.tool_index_box_list ul:hover{background-color:#fefadf;}
+.tool_index_box_list li{display:inline-block;margin:0;padding:0;vertical-align:middle;}
+.tool_index_box_list p{margin-top:16px;}
+/*工具首頁_無資料_結果範例*/
+.box_tool_sample p.info{height:96px;}
+.box_tool_sample img{float:left;width:368px;height:133px;margin-right:25px;}
+/*工具_首頁_輔助資訊*/
+.tool_index_assist dl{width:200px;display:block;float:left;margin:20px 0;}
+.tool_index_assist dt{margin:10px auto 5px auto;}
+.tool_index_assist dl.box_assist_c{margin:20px 50px}
+/*工具右邊_*/
+.tool_list{width:155px;float:right;padding-left:10px;}
+/*職務分析總覽_左大類*/
+.analysis_all_list,.analysis_all_content{display:block;float:left;margin-bottom:20px;}
+.analysis_all_list{width:231px;z-index:1;position:absolute;}
+.analysis_all_list ul{margin-top:0;margin-bottom:0;clear:both;}
+.analysis_all_list li{display:block;font-size:15px;}
+.analysis_all_list li.on{border:1px solid #ccc;border-right:1px solid #fff;height:26px;line-height:26px;padding-left:9px;color:#000;}
+.analysis_all_list li a{display:block;height:26px;line-height:26px;padding-left:10px;border:1px solid none;border-right:1px solid #ccc;}
+.analysis_all_list li a:hover{border:none;border-right:1px solid #ccc;background-color:#f4f4f4;height:26px;line-height:26px;padding-left:10px;}
+/*職務分析總覽_右中類*/
+.analysis_all_content{width:688px;border:1px solid #ccc;height:auto;min-height:480px;z-index:0;margin-left:230px;padding:0 10px 0 20px;overflow:hidden;}
+.analysis_all_content h2{margin:20px 0 10px 0;}
+.analysis_all_content ul{display:block;}
+.analysis_all_content li{display:inline-block;width:200px;vertical-align:top;line-height:20px;margin-bottom:10px;font-size:15px;}
+.analysis_all_content li.icon{display:inline-block;width:20px;vertical-align:top;}
+/*我的最愛_職務列表_無資料*/
+.interest_list_none{margin-top:10px;margin-bottom:10px;border-top:1px dotted #ccc;}
+/*我的最愛_職務列表*/
+.interest_list{overflow-y:auto;height:345px;margin-top:10px;margin-bottom:10px;scrollbar:transparent;border-top:1px dotted #ccc;}
+.interest_list ul{padding-top:10px;padding-top:10px;}
+.interest_list li .f2e_fav_del{display:none;}
+.interest_list::-webkit-scrollbar{width:5px;}
+.interest_list::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);border-radius:5px;}
+.interest_list::-webkit-scrollbar-thumb{border-radius:5px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}
+/*地區列表*/
+.area_list{margin:0;display:inline-block;}
+.area_list dl{clear:both;}
+.area_list dt{float:left;display:block;width:70px;clear:left;margin:0;margin-right:25px;text-align:right;}/*菜單標題*/
+.area_list dd{display:inline-block;width:640px;}/*菜單區塊*/
+.area_list dd ul{margin-top:0;margin-bottom:0;clear:both;}/*菜單細項*/
+.area_list dd li{float:left;width:105px;}
+.area_list dd li span{font-size:11px;color:#999;margin-left:2px;-webkit-text-size-adjust:none;}
+/*職務分析bar*/
+.bar_analysis{width:230px;margin:0 9px 20px 9px;display:inline-block;vertical-align:top;}
+.bar_analysis h3{
+	border-bottom:1px dotted #ccc;
+	padding:4px;
+	background-color:#f4f4f4;
+	font-weight:normal;
+}
+.bar_analysis dl{display:block;clear:both;letter-spacing:0;}
+.bar_analysis dt{line-height:14px;width:120px;display:inline-block;color:#333;font-size:12px;margin-right:3px;}
+.bar_analysis dd{display:inline-block;vertical-align:middle;font-size:12px;color:#666;}
+.bar_analysis dd.bar{height:8px;line-height:8px;width:40px;border:1px solid #ccc;background-color:#f7f7f7;padding:1px;vertical-align:top;}
+.bar_analysis dd.ratio{width:30px;text-align:right;}
+.bar_analysis dd img{float:left;height:8px;}
+/*職務分析10則區塊*/
+.box_analysis{overflow-y:auto;height:148px;scrollbar:transparent;}
+.box_analysis::-webkit-scrollbar{width:5px;}
+.box_analysis::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);border-radius:5px;}
+.box_analysis::-webkit-scrollbar-thumb{border-radius:5px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}
+.box_analysis p{padding:4px;}
+/*市場薪資Tabs*/
+#wage_tabs{margin:40px 20px 0 0;border:1px #ccc solid;}
+#wage_tabs ul{width:100%;margin:0;height:30px;margin-top:-31px;margin-left:-1px;}
+#wage_tabs li{float:left;width:120px;margin-right:1px;text-align:center;font-size:15px;}
+#wage_tabs ul li a{display:block;height:auto;line-height:29px;padding:0 5px;background-color:#fff;border:1px solid #ccc;}
+#menu li:hover a{background-color:#f4f4f4;}
+#menu li.active a{color:#000;padding:0 5px;border-bottom:1px solid #fff;}
+#menu li.active:hover a{background-color:#fff;}
+div.salary_chart{width:50%;margin:0 auto;}
+h3.marginTop{margin-top:20px}
+.box_wage_tabs{margin:20px auto;}
+.bg_wage_post{background:url(../img/ill_wage_post_none.gif) no-repeat;width:400px;height:200px;margin:auto;}/*市場薪資背景圖表*/
+.bg_wage_post p{padding-top:70px;padding-left:70px;}
+/*履歷完整度bar*/
+.bar_resume{background-color:#e6e6e6;}
+.bar_resume ul{display:inline-block;float:right;border:1px solid #cccccc;margin-top:10px;margin-right:8px;padding:0;width:34px;}
+.bar_resume li{height:8px;width:10px;display:block;float:left;border:1px solid #fff;/*background-color:#e6e6e6;*/padding:0;margin:0;margin-right:-1px;}
+.bar_resume li img{float:left;}
+/*修改履歷完整度bar*/
+.bar_resume_nav{background-color:#e6e6e6;}
+.bar_resume_nav ul{display:inline-block;float:left;border:1px solid #ccc;margin-top:5px;margin-left:22px;padding:1px;width:97px;height:8px;}
+.bar_resume_nav li{height:8px;width:17px;display:block;float:left;padding:0;margin:0;margin-right:-1px;background-color:#77C5E1;background-image:none;}
+.bar_resume_nav_L{ float:left;margin-top:10px;}
+.bar_resume_nav_R{ float:right;margin-top:10px;margin-right:5px;width:38px;}
+.bar_resume_nav_S_on,.bar_resume_nav_S_off,.bar_resume_nav_on,.bar_resume_nav_off{ float:right;width:25px;height:19px;margin-right:10px;}
+.bar_resume_nav_S_on{ background-image:url(../img/ill_resume_nav_success_on.gif);}
+.bar_resume_nav_S_off{ background-image:url(../img/ill_resume_nav_success_off.gif);}
+.bar_resume_nav_off{ background-image:url(../img/ill_resume_nav_success_off.gif);margin-top:15px;}
+.bar_resume_nav_on{ background-image:url(../img/ill_resume_nav_success_on.gif);margin-top:15px;}
+/*公司通知_未讀取泡泡*/
+.numeral_bubble{
+	float:right;
+	background-color:#C4DCF0;
+	padding:2px 3px;
+	margin:17px 6px auto 3px;
+	font-size:11px;
+	line-height:14px;
+	text-indent:0;
+	-webkit-text-size-adjust:none;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+.numeral_bubble:hover{color:#0055aa;}
+/*履歷_基本資料*/
+.resume_info{float:left;background-color:#f9f9f9;border:1px solid #ccc;width:948px;margin-bottom:15px;}
+.resume_info h2{font-size:16px;font-weight:bold;margin-top:15px;margin-bottom:10px;}
+.resume_info h2 a{margin-left:10px;}
+.resume_info dl{width:700px;margin-left:0;float:left;}
+.resume_info dt{display:block;float:left;width:70px;text-align:right;}
+.resume_info dd{display:inline;}
+.resume_info .photo{height:180px;}
+.resume_info .photo ul{margin:15px 20px 50px 30px;}/*個人照片*/
+/*履歷_不能使用*/
+.box_error{float:left;background-color:#f9f9f9;border:1px solid #ccc;width:903px;margin-bottom:15px;padding:15px;padding-left:30px;}
+.box_error dl{width:700px;margin-left:0;float:left;}
+.box_error dt{display:block;float:left;width:70px;text-align:right;}
+.box_error dd{display:inline;}
+/*履歷總覽_一般&高階*/
+.mark{padding:1px 3px;font-size:12px;background-color:#C4DCF0;border:1px solid #6699CC;-moz-border-radius:3px;-webkit-border-radius:3px;color:#000;}
+/* 學校 auto-complete */
+select.school_select{position:absolute;width:202px;visibility:hidden;height:150px;z-index:2;margin:22px 0 0 -207px;border:1px #999 solid;padding:2px;}
+.info_box{border:1px solid #ccc;padding:20px;margin-bottom:20px;}
+/*搜尋區域*/
+.search_box{
+	padding:15px 20px;margin-bottom:30px;
+	background-color:#f2f2f2;border-top:1px solid #ddd;border-bottom:1px solid #999;
+	-webkit-box-shadow:0 10px 10px -80px #999;
+	-moz-box-shadow:0 10px 10px -8px #999;
+	box-shadow:0 10px 10px -8px #999;
+}
+.rpt_box{padding:20px 70px 0 70px}/*應徵分析內容區外框*/
+/*履歷設定*/
+.content_resume_full{padding:20px 100px;border:1px solid #ccc;}/*外框*/
+.content_resume_full label{width:100px;}
+/*補填履歷my104logo*/
+.content_header{margin:10px auto;}
+/*工具滿版**/
+.content_tool_full{padding:20px 100px;border:1px solid #ccc;margin-bottom:20px;}/*外框*/
+.content_tool_full label{width:100px;}
+/*滿版粗框*/
+.content_full{padding:20px 80px;border:1px solid #ccc;}
+.content_full h1{margin:30px 0;}
+.content_full h2{margin:20px 0 20px 0;}
+.content_full p{padding:0;margin:0;margin-bottom:5px;}
+.content_full p label{width:122px;}
+.content_full .form_info{width:510px;margin-top:10px;}
+/*預覽履歷外框*/
+.content_resume_box{width:680px;margin:10px auto 15px auto;}
+/*預覽履歷*/
+.content_resume_view{padding:10px 20px;margin:10px 0;background-color:#fff;border:1px solid #ccc;}
+.content_resume_view h2{margin-top:20px;margin-bottom:10px;}
+.content_resume_view h3{margin-bottom:3px;font-weight:bold;}
+.content_resume_view p{padding:0;margin:0;margin-bottom:5px;}
+.content_resume_view p label{width:98px;}
+/*雙欄式*/
+.content_resume_view dl{width:310px;margin-left:0;display:inline-block;vertical-align:top;}
+.content_resume_view dt{display:block;float:left;width:70px;text-align:right;}
+.content_resume_view dd{display:inline;}
+.content_resume_view dd.info{display:inline-block;width:560px;padding-bottom:10px;}
+.content_resume_view .form_info{width:410px;}
+.content_resume_view .form_info ul{margin-bottom:0;}
+/*配對工作列表_配對條件*/
+.mate_box{margin:0 auto 15px auto;border:1px solid #ccc;padding:10px 15px;}
+.mate_box span.icon{float:right;margin-top:2px;margin-left:10px;}
+.mate_box dt{float:left;margin-bottom:15px;}
+.mate_box dd{display:inline-block;width:720px;}
+/*工作列表_icon列表vs摘要*/
+.icon_list,.icon_list_on,.icon_summary,.icon_summary_on{display:inline-block;padding-left:20px;margin-right:10px;height:26px;}
+.icon_list{background:url(../img/icon_list.gif) no-repeat 0 6px;}
+a .icon_list,.icon_list{background:url(../img/icon_list.gif) no-repeat 0 6px;}/*列表*/
+a:hover .icon_list,.icon_list_on{background:url(../img/icon_list_on.gif) no-repeat 0 6px;}
+a .icon_summary,.icon_summary{background:url(../img/icon_summary.gif) no-repeat 0 6px;}/*摘要*/
+a:hover .icon_summary,.icon_summary_on{background:url(../img/icon_summary_on.gif) no-repeat 0 6px;}
+a .icon_list,a .icon_summary{text-decoration:underline;}
+a:hover .icon_list,a:hover .icon_summary{color:#3399cc;text-decoration:none;}
+/*<!-- 2014.04 BC溝通 -->邀約通知說明banner*/ 
+.box_banner{ position:relative;}
+.explain_arrow{ position:absolute;top:-27px; right:-3px; }
+.icon_arrow_open{background:url(../img/ill_arrow_up.gif) no-repeat 0 -18px; width:16px; height:16px; margin-left:3px;vertical-align: text-bottom; display:inline-block;}
+.icon_arrow_close{background:url(../img/ill_arrow_up.gif) no-repeat 0 0; width:16px; height:16px; margin-left:3px;vertical-align: text-bottom; display:inline-block;}
+.banner_invite{background:url(../img/bg_banner_invite.gif) no-repeat 0 0; width:715px; height:47px; padding:12px 20px; margin-bottom:10px; font-size:15px;}
+.banner_reply{background:url(../img/bg_banner_reply.gif) no-repeat 0 0; width:715px; height:23px; padding:24px 20px; margin-bottom:10px; font-size:15px;}
+.banner_none{ display:none;}
+/*button功能列*/
+.function{height:26px;clear:both;width:100%;}
+.function li{float:left;margin-right:30px;line-height:26px;}/*排序*/
+.function li.button{margin-bottom:10px;margin-right:10px;}
+.function li.button_mar{margin-bottom:10px;margin-right:3px;}/*checkbox空間*/
+.function li.button_r{float:right;margin-bottom:10px;margin-right:0;margin-left:10px;}
+.function li.right{float:right;margin-left:20px;margin-right:0;}
+.function li.del_txt{padding-top:8px}/*刪除照片*/
+.function .arrow a{text-decoration:none;}
+.function li a.link{line-height:26px;text-decoration:none;}
+/*工作列表_標題*/
+.joblist_tit{clear:both;margin:0;padding:0;background-color:#fff;border-top:1px solid #ccc;border-bottom:1px solid #aaa;color:#000;}
+.joblist_tit ul{margin:0;padding:0;background-color:#f2f2f2;border-top:1px solid #fff;border-bottom:1px solid #fff;}
+.joblist_tit li{display:inline-block;margin:0;padding:4px 0;vertical-align:middle;}
+.joblist_tit li span.arrow{color:#999;}
+.joblist_tit li span.on{color:#f60;}
+.joblist_tit a{text-decoration:none;}
+.joblist_tit a:hover{color:#39c;}
+
+/*<!-- 2014.04 BC溝通 -->工作列表_內容*/
+.joblist_cont, .joblist_cont_2{clear:both;margin:0;padding:0;border-top:1px solid #ebebeb;}
+.joblist_cont:hover, .joblist_cont_2:hover{background-color:#fefadf;}
+.joblist_cont.off, .joblist_cont_2.off{background-color:#f5f5f5;}
+.joblist_cont ul{margin:0;padding:12px 0;}
+.joblist_cont_2 ul { margin:0; padding-top:4px;}
+.joblist_cont li, .joblist_cont_2 li{display:inline-block;margin:0;padding:0;vertical-align:middle;}
+.joblist_cont a, .joblist_cont_2 a{text-decoration:none;}
+.joblist_cont a:hover, .joblist_cont_2 a:hover{text-decoration:underline;}
+.joblist_cont li a:visited{color:#3399cc;}
+.have_read,.have_read a, .joblist_cont_2 li a:visited{color:#3399cc;}/*資料閱讀過後區分已讀跟未讀使用*/
+/*履歷開放button提示設定*/
+.resume_open_info{margin-left:30px;display:none;}/*工作列表_摘要*/
+p.joblist_summary{clear:both;margin:0;padding:0;padding-left:35px;line-height:19px;text-align:justify;text-justify:inter-ideograph;color:#333;overflow:hidden;padding-bottom:12px;}
+.f_r_button{float:right;margin:3px 17px 5px 15px;}/*我要應徵*/
+/*列表各欄寬*/
+.jobname,.jobname_1,.jobname_5,.compname,.compname_1,.compname_2,.compname_3,.compname_4,.compname_5,.compname_6,.compname_7,.jobname_6, .jobname_7,.property,.experience,.edu,.area,.mate_name,.conditions,.annotate,.folder,.class_name,.comp_receive, .text_overflow, .job_summary{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.jobname {width:182px;margin-right:10px;}/*職務名稱*/
+.compname{width:182px;margin-right:10px;}/*公司名稱*/
+.jobname_1{width:265px;margin-right:10px;}/*職務名稱*/
+.compname_1{width:265px; margin-right:10px;}/*公司名稱*/
+.jobname_2{width:340px;}
+.compname_2{width:335px;margin-right:20px;}/*公司名稱*/
+.compname_3{width:430px;margin-right:10px;}/*公司加職務名稱*/
+.compname_4{width:418px;margin-right:10px;}/*公司加職務名稱*/
+.jobname_5{width:220px;margin-right:10px;}/*職務名稱*/
+.compname_5{width:220px;margin-right:10px;}/*公司名稱*/
+.compname_6{width:650px;margin-left:10px; margin-right:10px; }/*公司名稱*/
+
+/*<!-- 2014.04 BC溝通 -->*/
+.job_summary{width:560px;margin-right:10px; margin-left:77px; color:#666; line-height:24px;}/*職務內容*/
+.compname_7{width:560px;margin-right:10px;}/*配對_公司加職務名稱*/
+.jobname_6{width:560px;margin-right:10px;}/*配對_職務名稱*/
+.jobname_7{width:310px;margin-right:10px;}/*配對list_職務名稱*/
+
+.check{width:25px;text-align:center;cursor:pointer;font-size:17px;}/*儲存*/
+.date{width:48px;text-align:center;line-height:16px;}/*日期*/
+.storage_day{width:42px;line-height:16px; margin-right:5px;text-align:center;}/*儲存日期*/
+.property{width:195px;margin-right:20px;}/*產業*/
+.source{width:75px;text-align:center;}/*來源*/
+.experience{width:50px;}/*經歷*/
+.edu{width:50px;}/*學歷*/
+.area{width:90px;}/*地區*/
+/* 2014.04 BC溝通 */
+.candidates{width:42px;text-align:center;line-height:16px;}/*應徵人數*/
+.candidates_2{width:100px;text-align:center;line-height:16px;}/*應徵人數*/
+.read{width:60px;text-align:center;line-height:16px;}/*已讀取*/
+.th_arrow{padding-top:8px;float:right;font-size:11px;-webkit-text-size-adjust:none;color:#999;}/*▼*/
+.numeral_list{width:20px;font-weight:bold;text-align:center;}/*12345排序*/
+.numeral_list_1{width:40px;font-weight:bold;text-align:center;}/*12345排序*/
+.job_numeral{width:70px;text-align:right;}/*9999*/
+.job_numeral_1{width:90px;text-align:right;margin-right:10px;}/*9999*/
+.receive{width:120px;}/*我要回覆*/
+/* 2014.04 BC溝通 */
+.receive_mail{width:20px;}/*信件回覆*/
+.accessory{ width:18px;} /*夾帶附件*/
+.comp_receive{width:120px; margin:0px 10px;}/*公司回覆狀態*/
+.comp_contact{ width:80px; margin-right:10px;}/*聯絡公司*/
+.recruited{width:100px; text-align:center;}/*我要應徵*/
+.recruited_time{width:100px; text-align:center; color:#999;}/*我要應徵*/
+.recruited{width:100px;}/*我要應徵*/
+.recruited_button{width:65px;text-align:center;}/*我要應徵*/
+.mate_mail{width:100px;}/*訂配對信*/
+.mate_mail label{cursor:pointer;}
+.newjob_mail{width:100px;text-align:center;}/*新職務通知信*/
+.annotate{width:123px;margin-right:10px;}/*註記*/
+.annotate_sub{width:200px;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;white-space:nowrap;}/*自訂資料夾_註記*/
+.function_icon{width:30px;text-align:center;}/*修改刪除儲存*/
+.mate_name{width:220px;}
+.conditions{width:420px;}/*配對條件*/
+.folder{width:70px;}/*資料夾*/
+.resume_class{width:40px;padding-left:10px;}
+.resume_name{width:440px;padding-left:10px;}
+.resume_name a{margin-right:10px;}
+.resume_date{width:110px;text-align:center;}/*最近修改日期*/
+.resume_icon{width:60px;text-align:center;}/*編修|命名|刪除*/
+.resume_3button{width:120px;text-align:center;}/*預覽 下載 列印*/
+.class_name{width:320px;padding-left:10px;}/*類別名稱*/
+.class_link{width:80px;text-align:right;}/*找進修課程*/
+.job_class{width:550px;}/*職務類別*/
+.job_class_1{width:680px;}/*職務類別*/
+.job_class_2{width:230px;}/*職務類別*/
+.job_analysis{width:60px;text-align:center;}/*職務分析*/
+.save_interest{width:110px;text-align:right;}/*我有興趣*/
+/*百分比*/
+.percentage,.percentage_1{letter-spacing:0;padding-left:10px;font-weight:bold;font-family:Verdana;color:#396;}
+.percentage{width:58px;}
+.percentage_1{width:55px;padding-left:5px;}
+/*職務說明_摘要*/
+.analysis_summary,.analysis_summary_1{margin:0;padding:0;color:#666;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	white-space:nowrap;
+	display:block;
+}
+.analysis_summary{width:700px;padding-left:72px;line-height:24px;}
+.analysis_summary_1{width:600px;padding-left:59px;}
+/*證照_摘要*/
+.class_summary{clear:both;margin:0;padding:0;padding-left:10px;padding-bottom:10px;line-height:19px;text-align:justify;text-justify:inter-ideograph;color:#666;overflow:hidden;height:3em;margin-bottom:12px;}
+.joblist_tit.reply{color:#999;}
+/*應徵回覆*/
+.reply{width:40px;text-align:center;line-height:16px;}
+.reply span{display:inline-block;color:#fff;text-align:center;text-decoration:none;}
+/*應徵人數*/
+.electrical_01,.electrical_02,.electrical_03,.electrical_04{height:16px;width:16px;display:inline-block;}
+.electrical_01{background:url(../img/ill_electrical.gif) no-repeat 0 0;}
+.electrical_02{background:url(../img/ill_electrical.gif) no-repeat 0 -20px;}
+.electrical_03{background:url(../img/ill_electrical.gif) no-repeat 0 -40px;}
+.electrical_04{background:url(../img/ill_electrical.gif) no-repeat 0 -60px;}
+/*回覆天數*/
+.icon_reply_01,.icon_reply_02,.icon_reply_03,.icon_reply_04{
+	display:inline-block;
+	cursor:text;
+	width:30px;
+	height:15px;
+	line-height:15px;
+	color:#fff;
+	font-size:12px;
+	letter-spacing:-0.08em;
+	-webkit-text-size-adjust:none;
+	font-weight:bold;
+	text-align:center;
+}
+.icon_reply_01{background:url(../img/ill_circle_reply.gif) no-repeat 0 0;}
+.icon_reply_02{background:url(../img/ill_circle_reply.gif) no-repeat 0 -30px;}
+.icon_reply_03{background:url(../img/ill_circle_reply.gif) no-repeat 0 -60px;}
+.icon_reply_04{background:url(../img/ill_circle_reply.gif) no-repeat 0 -90px;}
+/*副content*/
+.sub_content{padding:10px;background-color:#fff;border:6px solid #efefef;}
+.sub_content h3{margin-bottom:5px;margin-bottom:10px!important;font-weight:normal;}
+.sub_content li{display:inline-block;width:410px;margin-right:30px;padding-left:15px;background:url(../img/ill_li_drop.gif) no-repeat left 5px;overflow:hidden;white-space:nowrap;}
+/*自動載入下頁*/
+.next_page{margin:10px auto 15px auto;text-align:center;height:28px;line-height:28px;padding:5px;background-color:#f7f7f7;border:1px solid #ddd;-moz-border-radius:5px;-webkit-border-radius:5px;}
+.next_page li{float:left;line-height:28px;margin-right:15px;}
+.next_page li.page{margin-left:250px;}/*快速換頁*/
+.next_page li.more_loading{margin-left:300px;}/*載入更多工作*/
+.loading{background:url(../img/ill_loading.gif) no-repeat 0 10px;display:inline-block;width:30px;margin-left:6px;}
+/*回頁面頂端*/
+.go_top a{width:40px;height:20px;display:block;float:right;margin-right:-42px;margin-top:-47px;margin-top:-48px\9;background:url(../img/icon_gotop.gif) no-repeat;cursor:pointer;position:relative;}
+table{border-collapse:collapse;width:100%;margin:10px auto 20px auto;}
+table th{vertical-align:baseline;text-align:right;line-height:21px;width:160px;}
+table td{vertical-align:baseline;line-height:21px;}
+.notice p{margin:0;margin-bottom:5px;padding:0;overflow:hidden;word-wrap:break-word;word-break:break-all;line-height:18px;width:650px;}
+/* BC溝通 公司通知_我要回覆 */
+.comp_title{ margin-top:10px;}
+.comp_title li{display:inline-block; vertical-align:middle;}
+.comp_logo{ margin-right:10px;}
+.bc_contact{ margin-bottom: 20px; }
+.bc_contact dl{ padding: 20px 0; border-bottom: 1px solid #e8e8e8;}
+.bc_contact dt{ width: 119px; margin-right: 10px; text-align: center; vertical-align: top; display: inline-block; font-size: 16px;}
+.bc_contact dd{ width:550px; display:inline-block;}
+.bc_contact dd p.job-title{font-size: 16px;}
+.bc_contact dd ul{  margin:15px 0 0 0;}
+.bc_contact dd ul li{margin-right:10px; margin-bottom:10px;  }
+.bc_contact .added{ margin-top:20px; }
+.bc_contact .added span{color:#999; margin-right:5px;}
+.bc_contact .added_m21{margin-left:21px;}
+.bc_contact .added_m21 span{color:#999;}
+.bc_contact .message_on{ background-color:#f6f6f6;}
+.bc_contact .message_on p.reply-decs, .bc_contact .message_on p.reply-decs-semi { overflow: hidden; }
+.bc_contact .message_on dd p label{ float: none; width: auto; margin-right: 10px; cursor: pointer;}
+.bc_contact .message_on p.txt-num {text-align: right;}
+.bc_contact .message_on p.txt-num #reply_alert{display: block;}
+.bc_contact .reply-msg { display: none; }
+/*上/下一頁箭頭*/
+.page_back{ position:absolute;z-index:999; margin-top:300px; margin-left:10px;float:left; }
+.back_arrow{ background: url(../img/ill_next_arrow.gif) no-repeat 0 0; display:block; width:28px; height:54px; }
+.back_arrow:hover{background: url(../img/ill_next_arrow.gif) no-repeat 0 -60px;}
+.page_next{ position:absolute;z-index:999; margin-top:300px; margin-left:910px; float:right;}
+.next_arrow{ background: url(../img/ill_next_arrow.gif) no-repeat -32px 0; display:block; width:28px; height:54px; }
+.next_arrow:hover{background: url(../img/ill_next_arrow.gif) no-repeat -32px -60px;}
+.bc_contact .message_on span.attach-wrap { float: left; }
+.bc_contact .message_on span.attach{ display: none; }
+.bc_contact .message_on span.attach input{ outline: none; width: 250px;}
+.bc_contact .message_on span.attach-del{ width:12px; height:10px; height:15px\9; display: inline-block; background: url(../img/ill_delete.gif) no-repeat 0 2px; background-color:none; margin-left:5px;} 
+.bc_contact .message_on span.attach-del:hover{background: url(../img/ill_delete.gif) no-repeat 0 -18px; cursor: pointer;}
+.bc_contact .reply_plus {
+    background: #f6f6f6;
+    text-align: center; 
+}
+.bc_contact .reply_plus p {
+    padding: 0 8.6em;
+    text-align: left;
+    margin-bottom: 2em;
+}
+.bc_contact .reply_plus a {
+    font-size: 15px;
+    font-weight: bold;
+}
+/*回覆選項*/
+.form_txt_box{ border:1px solid #999;display:inline-block;background-color:#fff;cursor: pointer;vertical-align:text-top; margin-bottom:5px;}
+.form_txt_box textarea{ border:0px solid #fff;}
+.form_txt_box textarea:hover{ border:0px solid #fff;}
+.form_txt_box p{ margin:2px; border: 1px solid #999; padding: 2px; border: none\9; padding: 0\9;}
+.form_txt_box ul{ display:block; margin:2px;}
+.form_txt_box li{
+	border:1px solid #ccc;
+	display:inline-block; 
+	padding:1px 2px 4px 5px;
+	margin:0 5px 2px 0;
+	line-height: normal;
+	vertical-align: text-top;
+	color:#333;
+	border-radius:2px;
+	-webkit-border-radius: 2px;
+}
+
+/*mousehover提醒*/
+.mouse_point_1{ 
+position:absolute; visibility:hidden;
+background:#fff; border:1px solid #333; display:block; z-index:999; padding:0px 5px; line-height:21px; margin-top:50px; margin-left:-22px;
+}
+.mouse_point_2{ 
+position:absolute; visibility:hidden;
+background:#fff; border:1px solid #333; display:block; z-index:999; padding:0px 5px; line-height:21px; margin-top:70px; margin-left:8px;
+}
+.mouse_point_1 .arrow_bottom, .mouse_point_2 .arrow_bottom{
+        height:6px;
+        display:block;
+        position: relative;
+        z-index:7;
+        top:6px;
+        left:0px;
+}
+
+/*下一頁箭頭*/
+.page_back{ position:absolute;z-index:999; margin-top:300px; margin-left:10px;float:left; }
+.back_arrow{ background: url(../img/ill_next_arrow.gif) no-repeat 0 0; display:block; width:28px; height:54px; }
+.back_arrow:hover{background: url(../img/ill_next_arrow.gif) no-repeat 0 -60px;}
+
+.page_next{ position:absolute;z-index:999; margin-top:300px; margin-left:910px; float:right;}
+.next_arrow{ background: url(../img/ill_next_arrow.gif) no-repeat -32px 0; display:block; width:28px; height:54px; }
+.next_arrow:hover{background: url(../img/ill_next_arrow.gif) no-repeat -32px -60px;}
+/*104面試聘僱確認機制*/
+.employ_info{width:510px;padding:10px 12px;background-color:#f3f1eb;text-align:left;border:1px solid #e6e1d2;margin:10px auto;}
+.employ_info p{font-size:12px;margin-bottom:10px;line-height:20px;}
+.legal_bg{border-top:1px solid #dddddd;margin-top:15px;}
+.notice_reply_tb .bg_grey{background-color:#f6f6f6}
+.notice_reply_tb caption{background-color:#f6f6f6;padding:20px 0 10px 62px;font-weight:bold;font-size:16px}
+/*套用範本清單*/
+.ex_list{margin:5px auto;}
+.ex_list ul{clear:both;}
+.ex_list li{display:inline-block;width:210px;text-indent:15px;background:url(../img/ill_arrow_list.gif) no-repeat left;}
+/*無法回覆*/
+.no_reply,.no_reply_semion{background:url(../img/bg_no_reply.gif) no-repeat;width:100%;margin:10px auto 20px auto;height:260px;text-align:center;font-weight:bold;color:#CC3300;}
+.no_reply p,.no_reply_semion p{padding-top:100px;}
+.no_reply_semion{background:url(../img/bg_no_reply_semion.gif) no-repeat;}
+/*電子報清單*/
+.epaper_list{margin:0;display:inline-block;}
+.epaper_list dl{clear:both;}
+.epaper_list dt{float:left;display:block;width:60px;clear:left;margin:0;margin-right:10px;text-align:right;}/*菜單標題*/
+.epaper_list dd{display:inline-block;width:700px;}/*菜單區塊*/
+.epaper_list dd ul{margin-top:0;margin-bottom:0;clear:both;}/*菜單細項*/
+.epaper_list dd li{float:left;width:175px;}
+.form_list ul{clear:both;}
+.form_list li{display:inline-block;margin:0;margin-right:10px;vertical-align:top;white-space:nowrap;}
+.copy_resume{display:inline-block;vertical-align:top}
+.certify_box dl{clear:both;margin-bottom:25px;}/*證照清單*/
+.certify_box dt{float:left;display:block;width:143px;clear:left;margin:0;text-align:right;}/*菜單標題*/
+.certify_box dd{display:inline-block;width:770px;}/*菜單區塊*/
+/*欄位名稱*/
+/* label 之前加 p 是為了不要影響到複選單的 css */
+p label{float:left;width:122px;text-align:right;margin-right:5px;}
+p label span{color:#cc3300;}
+.menu_artfix{display:inline-block;margin-bottom:5px;}
+.menu_artfix ul{clear:both;}
+.menu_artfix li{display:block;margin-bottom:2px;vertical-align:text-top;}
+.menu_artfix li.inline{display:inline-block;margin-right:10px;}
+.menu_artfix p{margin-left:0;}
+.menu_artfix dl{clear:both;margin-top:15px;}
+.menu_artfix dt{float:left;display:block;width:104px;clear:left;margin:0;text-align:right;margin-bottom:10px;}/*菜單標題*/
+.menu_artfix dd{display:inline-block;width:550px;vertical-align:top;margin-bottom:10px;}/*菜單區塊*/
+.menu_explain{position:absolute;margin-top:-26px;margin-left:540px;}
+/*複選選單*/ /*項目的 CSS 直接寫在 selectedItem.css 中*/
+.form_menu_box{border:1px solid #999;display:inline-block;background-color:#fff;cursor:pointer;vertical-align:text-top;}
+.form_menu_box p{margin:2px;}
+.form_menu_box ul{clear:both;display:block;margin:2px;background:url(../img/ill_arrow_search.gif) no-repeat right 2px;padding-right:15px;}
+.form_menu_box li{border:1px solid #ccc;display:inline-block;padding:1px 2px 1px 5px;line-height:normal;vertical-align:text-top;color:#333;-moz-border-radius:2px;-webkit-border-radius:2px;}
+.form_menu_box li span{width:12px;height:10px;display:inline-block;background:url(../img/ill_delete.gif) no-repeat right 0;background-color:none;margin-left:5px;}
+.form_menu_box li span:hover{width:12px;height:10px;display:inline-block;background:url(../img/ill_delete.gif) no-repeat right -20px;background-color:none;}
+.form_info{display:inline-block;width:622px;vertical-align:top;}
+.form_info ul{clear:both;margin-bottom:10px;}
+.form_info li{display:block;}
+.form_info p{line-height:16px;margin-left:0;}
+/* resume 檢視畫面 防止不正常斷行*/
+#box_view_01 .info_width{width:540px;margin-bottom:5px;display:inline-block;}
+#box_view_02 .info_width, #box_view_03 .info_width{width:620px;margin-bottom:5px;display:inline-block;}
+.content_resume_view div.info_width{width:230px;display:inline-block;}
+.content_resume_view .form_info li{width:520px;}
+/*隱藏設定-查詢公司-列表*/
+.box_hide_list,.box_hide_search_list{height:160px;margin:15px 15px 15px 10px;padding:5px 0;overflow-y:scroll;}
+.box_hide_list ul{margin:0;padding:0;display:block;}
+.box_hide_list ul li{background:none;margin:0;margin-bottom:5px;padding:1px 1px 1px 3px;font-size:13px;}
+.box_hide_list::-webkit-scrollbar{width:5px;}
+.box_hide_list::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);border-radius:5px;}
+.box_hide_list::-webkit-scrollbar-thumb{border-radius:5px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}
+/*隱藏設定 頁面板*/
+.box_hide_search_list{border:1px solid #ddd;margin:0 0 0 50px;}
+.box_hide_search_list ul li{padding:1px 1px 1px 5px;}
+.box_hidden_text{margin-left:20px;}
+.box_hidden_search_input{margin-left:50px;}
+.box_hidden_search_input input[type="text"]{width:150px;}
+.box_hidden_search_input ul.list_sec,.box_hidden_search_input ul.list_sec_key{display:inline-block;width:360px;}
+.box_hidden_search_input ul.list_sec li,.box_hidden_search_input ul.list_sec_key li{line-height:26px;height:26px;}
+.box_hidden_search_input ul li:first-child{padding-bottom:2px;}
+.box_hidden_search_input ul span.nums{width:22px;float:left;text-align:left;}
+.box_hidden_search_input ul.list_sec_key{width:300px;}
+.box_hide_search_list .result{padding:1px 1px 1px 5px;}
+p.box_hide_search_title{margin:20px 0 5px 50px;}
+.icon_search_company{background:url(../img/icon_search_company.gif) no-repeat;width:85px;height:21px;display:inline-block;border:1px solid #999999;border-left:0;cursor:pointer;}
+.box_hide_error{margin:20px 15px 15px 15px;border:1px solid #ddd;}
+/*禁止下列公司搜尋我的履歷-已選擇區塊*/
+.search_key_box{padding:5px 0 10px 0;margin-top:-10px;margin-bottom:20px;background-color:#f2f2f2;border:1px solid #fff;border-bottom:1px solid #ddd;}
+.search_key_box ul{margin:0;margin-top:5px;padding:0;display:block;}
+.search_key_box ul li{margin:0 10px 5px 0;padding:0;width:290px;display:inline-block;vertical-align:top;list-style:none;background:none;font-size:13px;line-height:20px;}
+/*下拉式清單*/
+.box_list{border:1px solid #999;height:130px;margin:10px 15px;padding:5px 0;overflow-y:scroll;}
+.box_list ul{margin:0;padding:0;}
+.box_list ul li{background:none;margin:0;margin-bottom:5px;padding:1px 1px 1px 3px;font-size:13px;}
+.box_list ul li span{font-size:12px;}
+.box_list dl{display:block;}
+.box_list dt{display:inline-block;width:80px;text-align:right;}
+.box_list dd{display:inline-block;width:320px;}
+.hide_list{border:1px solid #ccc;margin:10px 15px;padding:5px 0;}
+.hide_list dl{display:block;}
+.hide_list dt{display:inline-block;width:80px;}
+.hide_list dd{display:inline-block;width:320px;}
+/*學歷/經歷區塊滑鼠變色*/
+#box_view_degree_1:hover,#box_view_degree_2:hover,#box_view_degree_3:hover,
+#box_view_experience_1:hover,#box_view_experience_2:hover,#box_view_experience_3:hover,#box_view_experience_4:hover,
+#box_view_experience_5:hover,#box_view_experience_6:hover,#box_view_experience_7:hover,#box_view_experience_8:hover,
+#box_view_annex_1:hover,#box_view_annex_2:hover,#box_view_annex_3:hover,
+#box_view_recommend_1:hover,#box_view_recommend_2:hover,#box_view_recommend_3:hover,
+#box_view_recommend_mail_1:hover,#box_view_recommend_mail_2:hover,#box_view_recommend_mail_3:hover,
+#box_edit_degree_1,#box_edit_degree_2,#box_edit_degree_new,
+#box_edit_experience_1,#box_edit_experience_2,#box_edit_experience_new,
+#box_edit_recommend_1,#box_edit_recommend_2,#box_edit_recommend_new{background-color:#efefef;}
+/*學歷*/
+#box_view_degree_1{margin-top:-10px;padding-top:10px;}
+#box_edit_degree_1{margin-top:-10px;}
+#box_view_degree_2{padding-top:10px;}
+#box_view_degree_1 .form_info,#box_view_degree_2 .form_info{margin-top:-5px;}
+/*經歷*/
+#box_view_experience_1,#box_view_experience_2,#box_view_experience_3,#box_view_experience_4,#box_view_experience_5,#box_view_experience_6,#box_view_experience_7,#box_view_experience_8{margin-top:-10px;padding-top:10px;}
+#box_edit_experience_1{margin-top:-10px;}
+#box_view_experience_1 .form_info,#box_view_experience_2 .form_info,#box_view_experience_3 .form_info,#box_view_experience_4 .form_info,#box_view_experience_5 .form_info,#box_view_experience_6 .form_info,#box_view_experience_7 .form_info,#box_view_experience_8 .form_info{margin-top:-5px;}
+#box_view_experience_new{margin-top:10px;}
+/*新增*/
+.mark_new{background-color:#fffce1;border:1px solid #e5e3ca;}
+/*作品附件*/
+#box_view_annex_1{margin-top:-10px;padding-top:10px;}
+#box_view_annex_2{padding-top:10px;}
+#box_view_annex_1 .form_info,#box_view_annex_2 .form_info{margin-top:-5px;}
+/*推薦人*/
+#box_view_recommend_1{margin-top:-10px;padding-top:10px;}
+#box_edit_recommend_1{margin-top:-10px;}
+#box_view_recommend_2{padding-top:10px;}
+#box_view_recommend_1 .form_info,#box_view_recommend_2 .form_info{margin-top:-5px;}
+/*推薦信*/
+#box_view_recommend_mail_1{margin-top:-10px;padding-top:10px;}
+#box_edit_recommend_mail_1{margin-top:-10px;}
+#box_view_recommend_mail_2{padding-top:10px;}
+/*求職錦囊列表主題banner*/
+.banner{margin-bottom:10px;}
+/*求職錦囊 - 右邊文章*/
+.article_box{margin:10px 20px;}
+.article_box p{margin:15px 0;font-size:15px;line-height:24px;}
+.article_box p.info{text-indent:32px;}/*文章段落首行空2字*/
+.article_box h3{font-size:15px;font-weight:bold;margin:20px 0 10px 0;}
+.article_box dl{margin:10px 0;display:block;font-size:15px;}
+.article_box dt{display:inline-block;width:112px;text-align:right;vertical-align:top;}
+.article_box dd{display:inline-block;width:595px;text-align:justify;text-justify:inter-ideograph;line-height:24px;}
+.list_appear{margin:0;padding-left:30px;}
+.list_appear li{margin:0;padding:0;list-style:decimal;font-size:15px;line-height:24px;}
+/*求職錦囊 - 文章 表格*/
+.article_table{width:95%;font-size:15px;}
+.article_table th{text-align:left;vertical-align:middle;border:1px #ccc solid;background-color:#efefef;padding:5px 10px;}
+.article_table td{border:1px #ccc solid;padding:5px 10px;}
+/*求職錦囊相關文章*/
+.article_list{margin:5px auto;}
+.article_list ul{clear:both;}
+.article_list li{display:block;margin-bottom:5px;text-indent:15px;background:url(../img/ill_arrow_list.gif) no-repeat left;font-size:15px;}
+/*頁碼*/
+#paging ul{margin:10px auto 30px auto;clear:both;padding:auto;text-align:center;}
+#paging li{display:inline-block;margin:0 3px;}
+#paging .pn{text-decoration:none;}
+#paging .on{color:#06C;font-weight:bold;border:1px #cccccc solid;padding:1px 2px 1px 3px;}
+/*求職面試，注意安全不失約*/
+.job_remind{margin:30px auto 0 auto;padding:5px 0;text-align:left;clear:both;}
+.job_remind h4,.job_remind p{margin:0;font-size:12px;line-height:18px;color:#555;}
+.job_remind li{margin:0;text-align:justify;text-justify:inter-ideograph;font-size:12px;color:#555;padding-left:13px;line-height:18px;list-style:none;background:url(../img/ill_li_drop.gif) no-repeat left 3px;}
+/*----版權宣告----*/
+#footer{width:950px;letter-spacing:1px;clear:both;margin:0 auto;text-align:right;}
+#footer p.bg{background-color:#515151;margin-bottom:6px;height:30px;color:#fff;line-height:30px;}
+#footer p.bg a{color:#FFF;text-decoration:none;}
+#footer p.bg a:hover{color:#FFFCCC;text-decoration:none;outline:none;}
+#footer p{line-height:18px;margin:0;margin-bottom:2px;padding-right:10px;font-size:12px;}
+/*連絡客服*/
+.tel_logo{float:left;width:235px;cursor:pointer;background:url(../img/ill_tel.gif) no-repeat right;}
+/*icon 圖示*/
+.icon_letter2,.icon_q,.icon_safe{padding-left:18px;}
+.icon_letter2{background:url(../img/ill_mail.gif) no-repeat;}
+.icon_q{background:url(../img/icon_qa.gif) no-repeat;}
+.icon_safe{background:url(../img/icon_safe.gif) no-repeat;}
+/*----地圖區塊----*/
+#map{width:946px;height:490px;background-color:#fff;border:2px solid #ffb300;z-index:4;padding:0;margin:0;position:absolute;display:none;}
+#map .button{margin-left:10px;margin-top:6px;}
+/*詳細客服專線POPUP*/
+#pop_tel{
+	z-index:3;
+	margin-top:-179px;margin-top:-182px\9;
+	position:absolute;
+	display:none;
+	text-align:left;
+	width:228px;
+	border:1px solid #979797;border-bottom:none;
+	background:#FFF;
+	*background:#ededed;/*IE6、IE7*/
+	-webkit-box-shadow:3px 4px 4px 0 #999;
+	-moz-box-shadow:3px 4px 4px 0 #999;
+	box-shadow:3px -2px 6px -1px #999;
+}
+.pop_tel_bg{
+	background:#ededed;/* Old browsers */
+	background:-moz-linear-gradient(top, #fff 0%, #e6e6e6 10%, #fff 100%);	
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(10%,#e6e6e6), color-stop(100%,#fff));	
+	background:-webkit-linear-gradient(top, #fff 0%,#e6e6e6 10%,#fff 100%);	
+	background:-o-linear-gradient(top, #fff 0%,#e6e6e6 10%,#fff 100%);
+	background:-ms-linear-gradient(top, #fff 0%,#e6e6e6 10%,#fff 100%);
+	background:linear-gradient(top, #fff 0%,#e6e6e6 10%,#fff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#ffffff',GradientType=0 );	
+}
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+#pop_tel{margin-top:-177px;}
+}
+.tel_job{width:218px;margin:0 10px;font-size:12px;line-height:18px;color:#666;background:url(../img/ill_tit_tel_job.gif) no-repeat top left;padding-top:40px;}
+.tel_job dl{display:block;}
+.tel_job dt{margin-left:26px;font-weight:bold;}
+.tel_job dd{margin-left:26px;font-size:11px;-webkit-text-size-adjust:none;}
+.tel_job p{padding-top:5px;margin:0;}
+.tel_job p span{font-size:11px;-webkit-text-size-adjust:none;}
+#footer #pop_tel a{font-size:12px;color:#666;text-decoration:underline;font-weight:normal;}
+#footer #pop_tel a:hover{text-decoration:none;}
+#pop_tel .arrow_bottom{
+	height:6px;
+	display:block;
+	position:relative;
+	z-index:7;
+	top:6px;
+	left:0;
+}
+/*我的商品情報_上方*/
+#my_ad_top{float:right;margin-top:18px;}
+#my_ad_top img {border: 1px solid #ccc;}
+/*廣告平台設定 2011.11.15 新增*/
+#aidma_186, #aidma_188, #aidma_190, #aidma_55, #aidma_485, #aidma_486{float:right;margin:0;padding:0;border:0;width:170px;height:65px;margin-left:4px;display:inline-block;}
+#aidma_186, #aidma_55{ margin-left:0;}
+/*上箭頭+popup*/
+.popup, .popup_page{z-index:3;position:absolute;display:none;text-align:left;background-color:#fff;border:1px solid #666;color:#333;-webkit-box-shadow:0 6px 6px -6px #555;-moz-box-shadow:0 6px 6px -6px #555;box-shadow:0 6px 6px -6px #555;}
+.alert_popup{z-index:3;position:absolute;display:none;background:#fff6cc;border:1px solid #ffd100;color:#333;white-space:nowrap;padding:7px;}
+.hide_info{display:none;}
+.popup h2{background-color:#f3ede0;border-bottom:1px solid #ccc;font-size:15px;text-indent:15px;height:33px;line-height:33px;margin-top:0;width:100%;}
+.popup h2.tit{background-color:#fff;border-bottom:1px solid #ccc;font-size:15px;text-indent:15px;height:22px;line-height:22px;padding-bottom:7px;width:100%;}/*職務分析簡介標題*/
+.popup h3{font-size:13px;padding:0;margin-left:15px;margin-top:5px;}
+.popup .arrow_bottom,.popup_page .arrow_bottom,.popup .arrow_top,.popup_page .arrow_top{height:6px;display:block;position:relative;z-index:5;top:-6px;}
+.popup ul{padding:0;margin:5px 10px 10px 15px;}
+.popup li{font-size:12px;margin-bottom:5px;padding:0;padding-left:15px;line-height:16px;list-style:none;background:url(../img/ill_li_drop.gif) no-repeat left 2px;	}
+.popup dl{margin:0 15px;}
+.popup dt{line-height:26px;margin-top:5px;}
+.popup dd{line-height:26px;padding-left:21px;vertical-align:top;}
+.popup dd.list{padding-left:35px;}
+.popup ul.function{margin:15px auto 20px 0;}
+.popup ul.function li{float:left;margin:0;list-style:none;background:none;}
+.popup p{margin:10px 15px;text-align:justify;text-justify:inter-ideograph;font-size:13px;}
+.popup p.t_c{text-align:center;}
+.popup p.t_r{text-align:right;}
+.popup p.tit{margin:0 15px;line-height:26px;}
+.popup_page ul{width:320px;margin:0;margin-left:4px;}
+.popup_page li{display:block;float:left;margin:0;margin-right:2px;margin-bottom:4px;}
+.popup_page li a{text-decoration:none;font-size:11px;line-height:normal;text-align:right;margin:0;padding:2px;display:block;width:22px;border:1px solid #ddd;-webkit-text-size-adjust:none;}
+.popup_page li a:hover{background-color:#777;border:1px solid #333;color:#fff;}
+/*應徵紀錄推薦工作*/
+/*新增履歷_複製 list*/
+.popup dd ul.form_list{margin:0;display:inline-block;}
+.popup dd ul.form_list li{padding-left:0;background:none;float:left;margin-top:4px;margin-right:6px;font-size:13px;}
+/*履歷編輯popup*/
+.resume_popup{z-index:3;display:none;text-align:left;background-color:#efefef;}
+.resume_popup h4{padding-top:10px;margin-bottom:20px;margin-left:10px;}
+.resume_popup .align_top{vertical-align:top;}
+/*履歷範本popup*/
+.resume_sample_pop .arrow_top{left:-50px;}
+.resume_sample_pop{width:200px;}
+.resume_sample_pop .noneliststyle{background:none;padding-left:0;}
+.reply_info{margin:10px 0 0 663px;width:285px;}/*應徵回覆popup定位*/
+.reply_info .arrow_top{right:-120px;top:-6px;}
+#rpt_apply_info_01,#rpt_apply_info_02,#rpt_apply_info_03{margin-top:10px;width:285px;}/*應徵回覆popup定位*/
+#rpt_apply_info_01 .arrow_top, #rpt_apply_info_02 .arrow_top, #rpt_apply_info_03 .arrow_top{right:120px;top:-6px;}
+#h1_info{margin-left:370px;width:580px;margin-top:-12px;}
+#h1_info .arrow_top{left:250px;}
+/*履歷開放設定lightbox*/
+/*履歷設定步驟*/
+#box_resume_open_setting,
+#box_resume_open_done {
+	z-index: 1001;
+	width: 540px;
+	margin-left: 180px;
+}
+#box_resume_open_setting p,
+#box_resume_open_done p {
+	font-size: 15px;
+}
+#box_resume_open_setting strong,
+#box_resume_open_done strong {
+	font-weight: bold;
+}
+.step2_hide_info {
+	z-index: 1002;
+	width: 510px;
+	margin-left: 15px;
+}
+.step2_hide_info cite {
+	left: 40px;
+}
+.resume_step123 dl{clear:both; margin:10px auto; }
+.resume_step123 dt{float:left;display:block; width:110px; *width: 120px; margin:0; margin-left:15px; margin-bottom:5px;font-weight: bold;letter-spacing:2px;font-size: 15px;}
+.resume_step123 dd{display:inline-block; width:400px; vertical-align:top;margin-bottom:15px; padding-left:0;}
+/* 快速切換條件*/
+.mate_list_pop{width:180px;}
+/*下方說明*/
+#help_info{width:700px;width:580px;}
+#help_info .arrow_top{left:-235px;}
+#wage_info_01,#wage_info_02{margin-left:112px;margin-top:-10px;}
+#wage_info_01 .arrow_top,#wage_info_02 .arrow_top{left:-270px;}
+#open_info{margin-top:-21px;}
+#open_info .arrow_top{left:-155px;}
+#hide_info{width:475px; margin:30px 0 0 0; left: 0;}
+#hide_info .arrow_top{left: 10px;}
+#mate_list_info{margin-top:-11px;}
+#mate_list_info .arrow_top{left:-45px;}
+.tabs1_info{width:490px;}/*職務分析_市場薪資box標題旁說明*/
+.tabs2_info{width:250px;}
+.tabs3_info{width:400px;}
+.tabs4_info{width:350px;}
+.tabs1_info li, .tabs2_info li, .tabs3_info li, .tabs4_info li{height:auto!important;}  /* 解決 li 裡的文字會 overlap 的問題 */
+#analysis_info_01,#analysis_info_02{width:753px;margin-top:-21px;}/*職務分析_標題旁說明 */
+#analysis_info_01 .arrow_top,#analysis_info_02 .arrow_top{left:-180px;}
+.resume_wage_info{width:320px;}/*經歷_市場身價 說明*/
+.resume_wage_info li{height:auto!important;}
+#yearly_pay_info{margin-left:188px;}/*年薪總額計算*/
+#yearly_pay_info .arrow_top{left:-50px;}
+#conditions_info_1,#conditions_info_2,#conditions_info_3,#conditions_info_4,#conditions_info_5{margin-left:241px;width:708px;}
+#conditions_info_1 .arrow_top,#conditions_info_2 .arrow_top,#conditions_info_3 .arrow_top,#conditions_info_4 .arrow_top,#conditions_info_5 .arrow_top{left:-235px;}
+/*職務總覽_職務說明popup*/
+.box_analysis_info{margin-top:30px;width:240px;margin-left:-23px;padding-bottom:10px;}
+.box_analysis_info .arrow_bottom{left:-90px;}
+.box_analysis_info p{line-height:18px;}
+#analysis_info_1{margin-left:300px;width:500px;}
+#analysis_info_1 .arrow_bottom{left:178px;}
+#box_page_top{width:320px;margin-left:628px;}/*快速換頁上方*/
+.box_page_bottom{width:320px;margin-top:-16px;}/*快速換頁下方*/
+.box_page_bottom .arrow_top{left:100px;}
+#passport_info{width:520px;margin-left:127px;}/*非本國籍人士帳號使用說明*/
+#passport_info .arrow_bottom{left:55px;}
+#service_info{width:640px;padding:5px;margin-left:155px;}/*多元意願說明*/
+#service_info .arrow_bottom{top:11px;}
+#service_info h3,#service_info p{margin-top:0;margin-bottom:5px;}
+#service_info hr{margin:10px 15px;}
+.job_mate_list_info{display:inline-block;}
+div.del-msg{width:320px;margin-left:28px;margin-top:11px;}/*刪除公司通知*/
+div.del-msg label{float:none; width:auto;}
+
+/*----------popup燈箱定位-------------------------------*/
+#box_new_folder,#box_edit_folder,#box_store_folder,
+#box_new_resume,#box_change_resume_name,#box_new_mate,
+#box_photo,#box_photo_no,#box_annotate,#box_mate_time,#box_mate_mail,
+#box_resume_store,#box_resume_store_dnf,#box_resume_store_no,#box_resume_store_first,
+#box_change_name,
+#box_hide_company,#box_hide_company_no,#box_help_ssl,#box_help_sso,#box_member_store{z-index:1001;width:360px;}
+#box_new_resume,#box_member_store,#box_new_mate{width:490px;}
+#box_photo{width:500px;}
+#box_annotate,#box_mate_time,#box_mate_mail{width:560px;}/*註記*/
+#box_wage_info_01,#box_wage_info_02,#box_wage_info_03,#box_wage_info_04,#box_wage_info_05,#box_wage_info_06,#box_wage_info_07,#box_wage_info_08,#box_wage_info_01_yes,#box_wage_info_02_yes,#box_wage_info_01_none{width:590px;}
+#box_help_ssl,#box_help_sso{width:600px;}
+#box_hide_company,#box_hide_company_no{width:635px;}
+#box_loader_info,#box_loader_add_info,#box_loader_del_info{z-index:1001;border:1px solid #999;padding:1px 4px;width:200px;}
+#box_loader_add_info,#box_loader_del_info{margin:50px 450px 0;}
+/*------------------------------------------------------*/
+#box_new_resume .help_txt{margin-left:68px}
+.tip{background-color:#fff;border:1px solid #ccc;padding:5px;margin:15px;}/*popup 燈箱或編輯內說明用*/
+.tip ul{margin-left:0;}
+.tip li{height:auto;}
+.tip_1{background-color:#FAFAFA;border:1px solid #ccc;padding:10px 20px;margin-bottom:20px;}/*一般頁面說明用*/
+.tip_1 p{margin:0;}
+.tip_1 p.time{margin:10px 0;padding-bottom:10px;text-align:right;}
+/*公司通知用*/
+.tip_1 dl{margin:10px 0;display:block;}
+.tip_1 dt{display:inline-block;text-align:right;width:70px;text-align:right;margin-bottom:5px;vertical-align:top;line-height:20x;}
+.tip_1 dd{display:inline-block;width:510px;text-align:justify;text-justify:inter-ideograph;margin-bottom:5px;line-height:20px;}
+.tip_reply{background-color:#fff;border:0;width:607px;}
+/*一般頁面說明用*/
+.tip_2{padding:10px;}
+.tip_2 p{margin:0;}
+.tip_2 p.height260{height:260px;}
+/*不失約宣告*/
+.declaration_info{margin-right:200px;margin-bottom:20px;}
+/*不宣告不失約問卷*/
+.declaration_no{width:285px;margin-top:-415px;margin-left:378px;}
+.declaration_no .dashline{border-bottom:1px dotted #ccc;margin:5px 0 10px 0;}
+.declaration_no label{float:none;text-align:left;cursor:pointer;}
+.form p{margin:15px 20px;overflow:hidden;word-wrap:break-word;word-break:break-all;line-height:18px;width:520px;}/*公司通知回覆內容區塊*/
+/*注意提醒訊息*/
+.attention{background-color:#faf6d4;border:1px solid #e6c26e;padding:0 15px;margin-bottom:15px;}
+.attention h2{margin-top:10px;}
+.attention p{background:url(../img/ill_attention.gif) no-repeat;padding:0;padding-left:20px;margin:5px auto;}
+.attention p.none{background:none;padding-left:0;margin:5px auto;}
+.attention a{margin-left:3px;margin-right:3px;}
+/*注意提醒訊息_修改履歷*/
+.attention_resume{width:952px;border:1px solid #ffe8b2;background-color:#ffffcc;margin-bottom:20px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+.attention_resume ul{ width:888px;min-height:60px;background:url(../img/bg_attention_resume_doll.png) no-repeat right bottom;margin-bottom:-6px;padding:5px 0 10px 0;}
+.attention_resume li{ background:url(../img/ill_attention.gif) no-repeat;padding:0;padding-left:20px;margin:5px 25px;width:670px;}
+.attention_resume li.none{background:none;}
+.attention_error{background-color:#faf6d4;border:1px solid #e6c26e;padding:15px 15px 10px 100px;margin-bottom:15px;background-image:url(../img/ill_error_48.gif);	background-repeat:no-repeat;background-position:35px 20px;}
+.attention_error h2{margin:0;margin-bottom:5px;}
+.attention_error p{padding:0;margin:0;margin-bottom:5px;}
+/*------------日曆樣式-----------------------------------------------*/
+#time_limit{margin-left:446px;margin-top:95px;}
+input.calendar{background:url(../img/icon_calendar.gif) no-repeat 190px;width:212px;border:1px solid #999;color:#888;padding:4px;background-color:#fff;cursor:pointer;margin-bottom:5px;}
+.interview_cal{width:auto;background-color:#fff;border:1px solid #666;height:180px;position:absolute;display:none;z-index:3;-webkit-box-shadow:0 6px 6px -6px #555;-moz-box-shadow:0 6px 6px -6px #555;box-shadow:0 6px 6px -6px #555;}
+.interview_cal p{margin:6px 0;text-align:center;padding:0 auto;}
+.cal_week,.cal_day{margin:2px 9px 0 8px;padding:0;}
+.cal_week li,.cal_day li{width:18px;float:left;border:1px solid #888;padding:0 5px;margin-right:-1px;display:block;}
+.cal_week li{text-align:center;background:#ededed;}
+.cal_day li{text-align:right;background:#fff;border-top:0;cursor:pointer;}
+.cal_day li.Sat{background:#effce3;}
+.cal_day li.sun{background:#feeee7;clear:left;}
+.cal_day li:hover{background-color:#444;color:#fff;}
+.cal_day li.Sat:hover{background:#effce3;color:#333;}
+.cal_day li.sun:hover{background:#feeee7;color:#333;}
+.but_s{cursor:pointer;font-size:0.8em;border:1px solid #777;background:#ededed;width:18px;padding:1px 3px;text-align:center;vertical-align:baseline;}
+/*------------------------------------------------------------------*/
+/*次連結仿button*/
+.sub_button,.sub_button_none{
+	background:#fff;/* Old browsers */
+	background:-moz-linear-gradient(top, #fff 0%, #fefefe 5%, #dcdcdc 100%);	
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(5%,#fefefe), color-stop(100%,#dcdcdc));	
+	background:-webkit-linear-gradient(top, #fff 0%,#fefefe 5%,#dcdcdc 100%);	
+	background:-o-linear-gradient(top, #fff 0%,#fefefe 5%,#dcdcdc 100%);
+	background:-ms-linear-gradient(top, #fff 0%,#fefefe 5%,#dcdcdc 100%);
+	background:linear-gradient(top, #fff 0%,#fefefe 5%,#dcdcdc 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dcdcdc',GradientType=0 );	
+	border:solid 1px #999;
+	border-right:solid 2px #666\9;
+	border-bottom:solid 2px #666\9;
+	display:inline-block;
+	vertical-align:middle;
+	height:23px;line-height:23px;
+	padding-left:5px;padding-right:5px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-box-shadow:1px 1px 0 0 #555;
+	-moz-box-shadow:1px 1px 0 0 #555;
+	box-shadow:1px 1px 0 0 #555;
+}
+.sub_button_none{color:#999;}
+.sub_button{color:#333;cursor:pointer;}
+.sub_button:hover{background-color:#F5F5F5;color:#000;border-bottom:1px solid #646464;border-right:1px solid #646464;}
+.sub_button span{vertical-align:text-bottom;}
+.ss_button,.ss_button_none{
+	background:#fff;/* Old browsers */
+	background:-moz-linear-gradient(top, #fff 0%, #fefefe 5%, #dcdcdc 100%);	
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(5%,#fefefe), color-stop(100%,#dcdcdc));	
+	background:-webkit-linear-gradient(top, #fff 0%,#fefefe 5%,#dcdcdc 100%);	
+	background:-o-linear-gradient(top, #fff 0%,#fefefe 5%,#dcdcdc 100%);
+	background:-ms-linear-gradient(top, #fff 0%,#fefefe 5%,#dcdcdc 100%);
+	background:linear-gradient(top, #fff 0%,#fefefe 5%,#dcdcdc 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dcdcdc',GradientType=0 );	
+	display:inline-block;vertical-align:middle;
+	border:1px solid #ccc;
+	border-bottom:1px solid #999;
+	border-right:1px solid #999;
+	height:18px;line-height:18px;
+	font-size:12px;color:#333;
+	padding-left:5px;padding-right:5px;	
+	-moz-border-radius:3px;	
+	-webkit-border-radius:3px;
+}
+.ss_button:hover{background-color:#F5F5F5;border:1px solid #b4b4b4;border-bottom:1px solid #646464;border-right:1px solid #646464;}
+.ss_button,.ss_button a,.ss_button:hover{color:#000;}
+.ss_button_none{background:#fff;color:#999;border:1px solid #fff;}
+.ss_button_none:hover{color:#999;}
+/*button 樣式*/
+/* gray */
+.gray{
+	background:#fff;/* Old browsers */
+	background:-moz-linear-gradient(top, #fff 0%, #fefefe 5%, #dcdcdc 100%);	
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(5%,#fefefe), color-stop(100%,#dcdcdc));	
+	background:-webkit-linear-gradient(top, #fff 0%,#fefefe 5%,#dcdcdc 100%);	
+	background:-o-linear-gradient(top, #fff 0%,#fefefe 5%,#dcdcdc 100%);
+	background:-ms-linear-gradient(top, #fff 0%,#fefefe 5%,#dcdcdc 100%);
+	background:linear-gradient(top, #fff 0%,#fefefe 5%,#dcdcdc 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dcdcdc',GradientType=0 );	
+	border:solid 1px #999;
+	border-right:solid 2px #666\9;	
+	border-bottom:solid 2px #666\9;	
+}
+.gray:hover{
+	background:#ededed;/* Old browsers */
+	background:-moz-linear-gradient(top, #fff 0%, #f7f7f7 2%, #d2d2d2 100%);	
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(2%,#f7f7f7), color-stop(100%,#d2d2d2));	
+	background:-webkit-linear-gradient(top, #fff 0%,#f7f7f7 2%,#d2d2d2 100%);	
+	background:-o-linear-gradient(top, #fff 0%,#f7f7f7 2%,#d2d2d2 100%);
+	background:-ms-linear-gradient(top, #fff 0%,#f7f7f7 2%,#d2d2d2 100%);
+	background:linear-gradient(top, #fff 0%,#f7f7f7 2%,#d2d2d2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d2d2d2',GradientType=0 );	
+}
+.gray:disabled{
+	color:#999;
+	background:#f7f7f7;
+	border-top:#ccc;
+	border-left:#ccc;
+	border-right:#999;
+	border-bottom:#999;
+}
+/* yellow */
+.yellow{
+	background:#fff8d2;/* Old browsers */
+	background:-moz-linear-gradient(top, #fff8d2 0%, #fee14d 5%, #f5bf4d 100%);	
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff8d2), color-stop(5%,#fee14d), color-stop(100%,#f5bf4d));	
+	background:-webkit-linear-gradient(top, #fff8d2 0%,#fee14d 5%,#f5bf4d 100%);	
+	background:-o-linear-gradient(top, #fff8d2 0%,#fee14d 5%,#f5bf4d 100%);
+	background:-ms-linear-gradient(top, #fff8d2 0%,#fee14d 5%,#f5bf4d 100%);
+	background:linear-gradient(top, #fff8d2 0%,#fee14d 5%,#f5bf4d 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#fee14d', endColorstr='#f5bf4d',GradientType=0 );	
+	border:solid 1px #a8760e;
+	border-top:1px solid #c39300;
+	border-bottom:1px solid #8f5400;
+	border-right:solid 2px #7b470a\9;
+	border-bottom:solid 2px #7b470a\9;	
+}
+.yellow:hover{
+	background:#fbbf00;/* Old browsers */
+	background:-moz-linear-gradient(top, #fff8d2 0%, #fedf00 5%, #f4b24d 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff8d2), color-stop(5%,#fedf00), color-stop(100%,#f4b24d));
+	background:-webkit-linear-gradient(top, #fff8d2 0%,#fedf00 5%,#f4b24d 100%);
+	background:-o-linear-gradient(top, #fff8d2 0%,#fedf00 5%,#f4b24d 100%);
+	background:-ms-linear-gradient(top, #fff8d2 0%,#fedf00 5%,#f4b24d 100%);
+	background:linear-gradient(top, #fff8d2 0%,#fedf00 5%,#f4b24d 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#fedf00', endColorstr='#f4b24d',GradientType=0 );	
+}
+.yellow:disabled{
+	color:#9a8d71;
+	background:#f3e2a4;
+	border-top:#c8ac58;
+	border-left:#c8ac58;
+	border-right:#b79a5f;
+	border-bottom:#b79a5f;
+}
+/*ibon 大button*/
+input[type="button"].big_button{font-size:16px;height:40px;font-weight:bold;}
+#lightbox,#lightbox_w{display:none;background:#2F2F2F;position:absolute;top:0;left:0;bottom:0;right:0;z-index:1000;}
+#lightbox_w{background:#fff;}
+/* disable時用的 gray */
+.disable_gray{color:#ededed;}
+.disable_gray2{color:#999;}/*履歷開放設定disable時使用*/
+.disable_gray2 a:hover{color:#999;}
+/*--------------------登入頁-------------------------------------------------------------------------------------------------*/
+/*會員登入*/
+.login_member,.login_info{display:block;float:left;margin:30px 0 40px 0;}
+/*登入左邊*/
+.login_info{width:430px;}
+.login_info h1{font-size:23px;font-family:"Times New Roman", Times, serif;margin-bottom:30px;}
+.box_login_info{margin-bottom:25px;}
+.box_login_info h3{margin:0;padding:0;}
+.box_login_info p{margin:5px 0;line-height:18px;}
+.box_login_info img{float:left;margin-right:15px;}
+/*登入右邊*/
+.login_member{width:450px;margin-left:60px;margin-bottom:20px;border:5px solid #eee;}
+.login_member label{width:100px;text-align:right;}
+.login_member p{margin:15px auto;padding:0 15px;}
+.login_member h1{border:1px solid #fff;text-align:center;padding:9px 0 12px 0;font-size:16px;margin-bottom:30px;background:url(../img/bg_login_member_h2.gif) repeat;}
+/* 2012-06-22 - sam add */
+#rdo_salary span{display:none;}
+#mate_advset{display:none;background-color:#f9f9f9;border:1px solid #ccc;padding-top:20px;padding-bottom:20px;}
+/* 推薦工作的 職類名稱 和 公司名稱 Tooltip */
+#job_info, #comp_info{position:absolute;margin-top:10px;}
+/* Placeholder 文字顏色 */
+.empty{color:#999;}
+.resume_icon_sam{width:40px;text-align:center;}
+.list_title{font-weight:bold;color:#666;}
+/* 推薦工作 */
+.recommend{width:320px;overflow:hidden;display:inline-block;}
+.sub_content ul li{line-height:2em;}
+/*應徵紀錄-推薦工作*/
+@-moz-document url-prefix(){.sub_content ul li{line-height:1.5em;}}
+.job_suggest p span{line-height:15px;}
+.job_suggest p span.selectjob{color:#d66c77;border:1px solid #d66c77;padding:2px;}
+a.all_folder_on{background:url(../img/icon_folder.gif) no-repeat 0 1px;padding-left:20px;}
+/* 我要應徵 button 格式 */
+.apply_button{display:inline-block;vertical-align:middle;cursor:pointer;color:#333;border:1px solid #ccc;font-size:11px;color:#666;border-bottom:1px solid #999;border-right:1px solid #999;background-color:#FAFAFA;height:23px;line-height:23px;padding-left:5px;padding-right:5px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.apply_button:hover{background-color:#F5F5F5;color:#000;border:1px solid #b4b4b4;border-bottom:1px solid #646464;border-right:1px solid #646464;}
+.apply_button span{vertical-align:text-bottom;}
+#conditions_info{margin-top:10px;}
+.alignTop{vertical-align:top;}
+/* 照片大小 */
+.photo_size{width:70px}
+.content_resume_view .photo_size{width:110px;}
+.person_img{position:relative;cursor:pointer;line-height:0;padding:0;}
+.person_img .note{position:absolute;bottom:0;width:70px;height:17px;line-height:17px;text-align:center;background:#000;color:#FFF;font-size:11px;display:none;}
+.changeName1{height:16px;}
+/* 禁止下列公司搜尋我的履歷 */
+.complete_keyword{padding:15px;border:1px solid #DDD;}
+/*加入會員頁說明104好處*/
+#box_104good{margin:40px 60px;width:820px;z-index:1001;display:none;}
+#box_104good p{margin:40px;}
+.buffet_f_name li a{overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;white-space:nowrap;}
+/*新功能介紹popup*/
+.new_introduction{position:absolute;background-color:#fff;border:1px solid #666;color:#333;padding:10px;-moz-box-shadow:0 0 15px #999;-webkit-box-shadow:0 0 15px #999;	box-shadow:0 0 15px #999;}
+.new_introduction p{margin:10px 46px 15px 20px;}
+/*履歷部分開放新功能介紹popup*/
+#box_resume_set{width:570px;margin:80px 0 0 180px;}
+/*貼紙*/
+.stickers{z-index:3;position:absolute;visibility:visible;text-align:left;background-color:#9be1f4;border:1px solid #3f80bf;color:#333;-webkit-box-shadow:0 6px 6px -6px #555;-moz-box-shadow:0 6px 6px -6px #555;box-shadow:0 6px 6px -6px #555;}
+.stickers .arrow_top{height:7px;display:block;position:relative;z-index:5;top:-7px;*top:-7px;_top:-17px;background:url(../img/ill_stickers_cite.gif) no-repeat  bottom;}
+.stickers p{margin:5px 15px 10px 15px;text-align:justify;text-justify:inter-ideograph;font-size:13px;}
+.close_stickers{float:right;margin:-3px 4px 0 0;}
+#hide_old{width:160px;}
+/*ibon 合約*/
+.ibon_legal{height:120px;width:786px;overflow:auto;border:1px solid #ccc;padding-left:10px;}
+.ibon_legal h2{margin:20px 0 10px 0;}
+.ibon_legal p{line-height:20px;margin:10px 0;}
+.ibon_legal ol{margin:10px 0;list-style-position:outside;margin-left:30px;}
+.ibon_legal ol.decimal{list-style-type:decimal;}
+.ibon_legal ol.alpha{list-style-type:lower-alpha;}
+.ibon_legal li{line-height:20px;}
+/*ibon送出成功*/
+.ibon_success{padding:0 0 15px 70px;margin-bottom:15px;background:url(../img/ill_success_48.gif) no-repeat;}
+.ibon_success_box{width:400px;border:3px solid #8ec31f;background-color:#f2fed9;padding:20px;margin-bottom:15px;}
+.ibon_success_box p{margin:15px 0 15px 0;}
+.page_ibon{margin:10px 0 10px 15px;}
+.page_ibon th{padding:5px;background-color:#f2f2f2;border:1px solid #aaa;color:#000;text-align:center;}
+.page_ibon td{padding:5px;border:1px solid #aaa;text-align:center;vertical-align:middle;}
+/*自傳範本*/
+.resume_sample{margin:0 auto;width:680px;}
+.resume_sample h1{margin-bottom:10px;font-size:16px;}
+.resume_sample h2{margin-top:20px;color:#339966;font-weight:normal;}
+.resume_sample h3{font-size:15px;margin-top:20px;margin-bottom:5px;font-family:Arial, Helvetica, sans-serif;}
+.resume_sample p{margin:10px 0;font-size:15px;line-height:24px;text-indent:32px;text-justify:inter-ideograph;text-align:justify;}
+.resume_sample blockquote{border:1px solid #d2d2d2;padding:10px 20px 10px 20px;margin-top:20px;margin-bottom:20px;}
+.resume_sample blockquote p{margin:5px 0;font-size:15px;line-height:24px;text-indent:0;}
+.resume_sample blockquote ul{margin-left:20px;}
+.resume_sample blockquote li{padding:0;margin:0 0 5px 0;font-size:15px;line-height:24px;list-style-type:square;text-justify:inter-ideograph;text-align:justify;}
+.resume_sample ul{margin-left:50px;}
+.resume_sample li{padding:0;margin:0 0 5px 0;font-size:15px;line-height:24px;list-style-type:square;}
+/*範本標題*/
+.sample_tit{background-color:#F2F2F2;border-top:1px solid #d2d2d2;border-bottom:1px solid #d2d2d2;padding:8px;margin-bottom:20px;font-size:24px;font-weight:bold;letter-spacing:2px;text-align:center;}
+/* page print */
+@media print{
+	.function .right{display:none;}
+	.content_resume_view h3{display:block;clear:both;margin:10px 0 5px 0;}
+	.line_yellow{display:block;clear:both;margin:10px 0 5px 0;}
+	.content_resume_view{border:0;}
+	.content_resume_view p label{width:120px;}
+	.content_resume_view .form_info{width:400px;}
+	.content_resume_view dl{display:block;float:left;}
+	.content_resume_view dt{display:block;float:left;width:80px;}
+	.content_resume_view dd.info{display:block;float:right;width:550px;}
+}
+/*--- 加入會員 E-mail menu 程式---*/
+.ac_results{border:1px solid #444;background-color:white;padding:0;margin:0;list-style:none;position:absolute;z-index:10000;display:none;}
+.ac_results li{padding:1px 5px;white-space:nowrap;color:#101010;text-align:left;}
+.ac_over{cursor:pointer;background-color:#F5EEBC;}
+.ac_match{text-decoration:underline;color:black;}
+/*錯誤頁*/
+.error_404{text-align:center;margin:30px auto;background:url(../img/ill_error_404.gif) no-repeat 80px 0;height:240px;padding:200px 50px 0 530px;}
+.error_404 p{font-size:16px;text-align:left;line-height:30px;}
+/* for IE8 解決 textarea scorll 跳動的問題 */
+textarea{height:82px\9;}
+textarea.row10{height:162px\9;}
+textarea.row15{height:242px\9;}
+/* CSS 調整 for jqplot*/
+.jqplot-point-label, .jqplot-axis, .jqplot-yaxis{font-size:12px;}
+/* popup 中 li 的高度設定 */
+.tip_height li{height:auto;}
+/* ibon列印頁 */
+label[for=agree]{float:none;}
+/*覆歷開放設定*/
+.resume_status{clear:both;display:block;padding:5px 0 5px 3.5em;overflow:hidden;}
+.resume_status ul.resume_set{margin-left:18px;font-size: 15px;}
+.resume_status ul.resume_set span#ResumeSetFmo_resumeStatus{font-size: 15px;} /* 上面的設定會被span的樣式蓋掉 */
+.resume_status ul.resume_set .set_item{margin-bottom:1em; line-height: 170%; *overflow:hidden;}
+.resume_status ul.resume_set .main_option{display:block;margin:0;overflow:hidden;float:left;width:auto;font-weight: bold;}
+.resume_status ul.resume_set .option_descirbe{margin:0 0 0 6.8em; *margin:0 0 0 7.5em; line-height: 170%;}
+.resume_switch dl.resume_set{margin-left:18px;}
+.resume_switch .clearfix {display: block; width: 100%; height: 0; overflow: hidden; clear: both; visibility: hidden;}
+.resume_status .txt_sub {font-size: 15px;}
+.resume_switch label.w132{width:132px;}
+#popup_setup {font-size: 13px; background: #EFEFEF; border-top: 1px solid #CCC; border-bottom: 1px solid #CCC; padding: 15px 15px 0 15px; width: 445px; position: relative; margin-top: 10px; display: none;}
+#popup_setup .gray_arrow_top {height: 10px; width: 18px; display: block; background: url(../img/ill_cite_gray.gif) no-repeat; position: absolute; z-index: 5; top: -10px; left: 50%; margin-left: -9px;}
+#popup_setup .fun_dis {overflow: hidden; margin-bottom: 15px;}
+#popup_setup .set_detail {float: left;}
+#popup_setup .set_option {margin-left: 8em;}
+#popup_setup .set_more {width: 100%; overflow: hidden;}
+#popup_setup .set_more li {margin-top: .75em;}
+#popup_setup .dusty_type {display: inline-block; vertical-align: middle; zoom: 1; width:7.5em; text-align: right;}
+
+/*屬性變動*/
+.display_none{display:none;}
+/*履歷修改頁-職類累計年資menu_artfix調整*/
+.job_exp_fix{float:right;display:block;width:625px;}
+/*div高度無法撐高時使用*/
+.set_clear{clear:both;}
+/* 我要回覆 - 檔案上傳 */
+.file-wrapper{cursor:pointer;display:inline-block;overflow:hidden;position:relative;margin-top:3px;}
+.file-wrapper input{cursor:pointer;font-size:100px;height:100%;filter:alpha(opacity=1);-moz-opacity:0.01;opacity:0.01;position:absolute;right:0;top:0;}
+.file-wrapper .icon_mail_accessory{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;color:#fff;cursor:pointer;display:inline-block;font-size:11px;font-weight:bold;margin-right:5px;text-transform:uppercase;}
+/* recommend job */
+.recommend-job{clear:both;position:relative;margin-bottom:30px;border:1px solid #ccc;font-size:16px;font-family:"微軟正黑體";overflow:hidden;height:285px;}
+.recommend-job .rec-title,
+.recommend-job .rec-content{position:relative;display:block;overflow:hidden;}
+.recommend-job .rec-content div{position:relative;}
+.recommend-job .rec-title li{float:left;}
+.recommend-job .rec-title li a{display:block;cursor:pointer;height:55px;}
+/* 離家近 */
+.recommend-job .rec-title li.near-home a{background:url(../img/ill_nav_goodjob.gif) no-repeat 0 0;width:315px;}
+.recommend-job .rec-title li.near-home a:hover,
+.recommend-job .rec-title li.near-home a.on{background:url(../img/ill_nav_goodjob.gif) no-repeat 0 -70px;}
+/* 福利優 */
+.recommend-job .rec-title li.good-welfare a{background:url(../img/ill_nav_goodjob.gif) no-repeat -315px 0;width:317px;}
+.recommend-job .rec-title li.good-welfare a:hover,
+.recommend-job .rec-title li.good-welfare a.on{background:url(../img/ill_nav_goodjob.gif) no-repeat -315px -70px;}
+/* 週休二日 */
+.recommend-job .rec-title li.two-day-weekend a{background:url(../img/ill_nav_goodjob.gif) no-repeat -632px 0;width:316px;}
+.recommend-job .rec-title li.two-day-weekend a:hover,
+.recommend-job .rec-title li.two-day-weekend a.on{background:url(../img/ill_nav_goodjob.gif) no-repeat -632px -70px;}
+/* 圓圈點的列表 */
+.recommend-job .rec-content ul{display:block;padding:0;margin:20px 0;height:145px;}
+.recommend-job .rec-content ul li{ display:inline-block;padding-left:20px;list-style:none;background:url(../img/ill_li_drop_g.gif) no-repeat 0 5px;margin:10px 10px 0 30px;width:250px;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;white-space:nowrap;}
+/* 更多工作 */
+.recommend-job .more-job{text-align:right;margin-bottom:25px;margin-right:25px;}
+.recommend-job .rec-content .good-welfare,
+.recommend-job .rec-content .two-day-weekend{display:none;}
+/* 沒有工作時的呈現 */
+.recommend-job .no-data{text-align:center;font-size:20px;margin:100px;}
+
+/* 首頁 104 plus 入口 */
+.plus_block {
+    padding: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.plus_block a {
+	padding: 10px;
+}
+.plus_block.loading_status {
+    padding: 12px 10px;
+}
+.plus_block.loading_status img {
+    float: left;
+    margin-right: 12px;
+}
+/* 公告 */
+#ann {
+    margin: 15px auto 50px auto;
+    width: 800px; 
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    line-height: 176%;
+} 
+#ann p {
+    margin-bottom: 1em; 
+}
+#ann .red {
+    font-size: inherit;
+    color: #c9151e; 
+}
+/*interview*/
+.bc_history,
+.bc_loading {
+    margin-top: 30px; 
+    padding: 1em 0;
+    border-radius: 3px;
+    background: #eee;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+    width: 100%;
+    color: #05A;
+} 
+.bc_history:hover {
+    background: #e8e8e8; 
+}
+.bc_loading {
+	display: none;
+	color: #888;
+}
+.bc_loading img {
+	verticla-align: middle;
+	margin-right: 0.3em;
+}
